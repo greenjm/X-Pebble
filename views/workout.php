@@ -30,7 +30,8 @@ document.onkeypress = stopRKey;
 	<form onsubmit="return false;">
 	<div id="header">
 	<button id="save" type="submit" value="Save Workout" onclick="saveWorkout()">Save Workout</button><br>
-	<input id="workoutname" type="text" name="workout-name" value="MyWorkout">
+	<input id="workoutname" type="text" name="workout-name" value="MyWorkout"><br>
+	<p id="nameTaken" style="display:none;">You already have a workout with that name. Please choose another name.</p>
 	<!--<button id="save" type="submit" value="Save Workout" onclick="saveWorkout()">Save Workout</button><br>-->
 </div>
 	<div id="table-wrapper">

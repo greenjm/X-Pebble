@@ -54,6 +54,7 @@ var addRow = function() {
 }
 
 var saveWorkout = function() {
+	$("#nameTaken").hide();
 	var username = "greenjm";
 	var userid;
 	var packet = {
@@ -82,6 +83,10 @@ var saveWorkout = function() {
 		dataType: "text",
 		async: false,
 		success: function(data) {
+			if (data === "Fail"){
+				$("#nameTaken").show();
+				return;
+			}
 			workid = data;
 			console.log(workid);
 		}
