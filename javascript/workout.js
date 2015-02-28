@@ -57,7 +57,7 @@ var saveWorkout = function() {
 	var username = "greenjm";
 	var userid;
 	var packet = {
-		"username": username;
+		"username": username
 	};
 	$.ajax({
 		type: "GET",
