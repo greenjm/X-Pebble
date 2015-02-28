@@ -13,6 +13,6 @@ if ($query->execute()){
 	}
 }
 
-echo json_encode($results);
+echo $results;
 
 ?>
