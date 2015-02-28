@@ -64,6 +64,7 @@ var saveWorkout = function() {
 		url: "../scripts/get_id_from_username.php",
 		data: packet,
 		dataType: "text",
+		async: false,
 		success: function(data) {
 			userid = data;
 			console.log(userid);
