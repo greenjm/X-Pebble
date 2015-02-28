@@ -11,7 +11,7 @@ var populateDatalist = function(){
 			//var test = jQuery.parseJSON(data);
 			for(var id in data){
 				var option = document.createElement('option');
-				option.attr('value', data[id]['name']);
+				option.setAttribute('value', data[id]['name']);
 				console.log(data[id]['name']);
 				datalist.append(option);
 			}
