@@ -13,7 +13,7 @@ var populateDatalist = function(){
 			}
 			document.createElement('option');
 
-			//console.log(data);
+			console.log(data);
 		}
 	})
 }
