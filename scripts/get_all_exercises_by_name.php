@@ -2,16 +2,16 @@
 header("Access-Control-Allow-Origin: *");
 include "setdb.php";
 
-$query = $db->prepare('select name from exercise');
+$query = $db->prepare('select name, id from exercise');
 $query->execute();
 
 $results = array();
 if ($query->execute()){
-	$count = 0;
 	while($row = $query->fetch(PDO::FETCH_ASSOC)){
+		$id = $row["id"];
 		$name = $row["name"];
-		$results[$count] = $name;
-		$count++;
+		$results[$id] = array();
+		$results[$id]["name"] = $name; 
 	}
 }
 
