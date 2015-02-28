@@ -30,6 +30,7 @@ var getDuration = function(e){
 		type: "GET",
 		url: "../scripts/get_exercise_duration.php",
 		dataType: 'text',
+		data: packet,
 		success: function(data) {
 			console.log(data);
 		}
