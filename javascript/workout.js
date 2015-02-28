@@ -7,10 +7,10 @@ var populateDatalist = function(){
 	console.log(datalist);
 	$.ajax({
 		url: "../scripts/get_all_exercises_by_name.php",
-		datatype: "json";
+		datatype: "json",
 		success: function(data){
 			for(var id in data){
-				console.log(data['1']['name']);
+				console.log(data[id]['name']);
 			}	
 			document.createElement('option');
 
