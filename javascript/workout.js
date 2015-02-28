@@ -90,10 +90,11 @@ var saveWorkout = function() {
 
 	var table = document.getElementById('table');
 	for (var i = 1; i < table.rows.length; i++){
+		var nextExercise = table.rows[i].firstChild.firstChild.value;
 		var packet3 = {
 			"workid": workid,
 			"step": i,
-			"exercise": table.rows[i].firstChild.firstChild.value
+			"exercise": nextExercise
 		};
 		$.ajax({
 			type: "POST",
@@ -102,7 +103,7 @@ var saveWorkout = function() {
 			success: function(){
 				console.log("success");
 			}
-		})
+		});
 	}
 }
 
