@@ -80,11 +80,22 @@ var saveWorkout = function() {
 		url: "../scripts/add_new_workout.php",
 		data: packet2,
 		dataType: "text",
+		async: false,
 		success: function(data) {
 			workid = data;
 			console.log(workid);
 		}
 	});
 	console.log(workid);
+
+	var table = document.getElementById('table');
+	for (var i = 1; i < table.rows.length; i++){
+		var packet3 = {
+			"workid": workid,
+			"step": i,
+			"exercise": table.rows[i].firstChild.value
+		};
+		console.log(table.rows[i].firstChild.value);
+	}
 }
 
