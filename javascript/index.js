@@ -29,6 +29,7 @@ var clearCookies = function(){
 var getLoginCredentials = function() {
 	var username = $("input[name=username]").val();
 	var password = $("input[name=password]").val();
+	console.log(username, password);
 	return {username: username, password: password};
 }
 

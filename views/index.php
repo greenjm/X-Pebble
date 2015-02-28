@@ -26,7 +26,7 @@
 				<label for="password"><h2>Password:</h2></label>
 				<input type="password" name="password" autofocus/>
 				<br>
-				<p style="diplay:hidden" id="loginError">Invalid Username or Password</p>
+				<p style="display:none;" id="loginError">Invalid Username or Password</p><br>
 				<div align="justify">
 					<button type="submit" value="Sign in" onclick="login()">Sign In</button>
 					<button id="register" type="submit" value="Register" onclick="openregister()">Register</button>
