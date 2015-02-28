@@ -93,9 +93,9 @@ var saveWorkout = function() {
 		var packet3 = {
 			"workid": workid,
 			"step": i,
-			"exercise": table.rows[i].firstChild.value
+			"exercise": table.rows[i].firstChild.firstChild.value
 		};
-		console.log(table.rows[i].firstChild.value);
+		console.log(table.rows[i].firstChild.firstChild.value);
 	}
 }
 
