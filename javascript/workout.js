@@ -54,7 +54,7 @@ var addRow = function() {
 }
 
 var saveWorkout = function() {
-	var username = Cookie.get("username");
+	var username = "greenjm";
 	var userid;
 	var packet = {
 		"username": username;
