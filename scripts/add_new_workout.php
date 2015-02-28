@@ -5,9 +5,9 @@
 	$userid = $_POST["userid"];
 	$name = $_POST["name"];
 
-	$checkName = $db->prepare('select * from workout where userid = :userid or name = :name');
-	$checkName->bindValue(':userid', $userid, PDO::PARAM_INT);
-	$checkName->bindValue(':name', $name, PDO::PARAM_STR);
+	$checkName = $db->prepare('select * from workout where userid = :user and name = :nam');
+	$checkName->bindValue(':user', $userid, PDO::PARAM_INT);
+	$checkName->bindValue(':nam', $name, PDO::PARAM_STR);
 	$checkName->execute();
 
 	$rowCount = $checkName->rowCount();
