@@ -6,7 +6,7 @@
 	$step = $_POST['step'];
 	$exercise = $_POST['exercise'];
 
-	$query = $db->prepare('insert into routine (workid, step, exercise) values (:workid, :step, :exercise)');
+	$query = $db->prepare('insert into routine (workid, step, exercise) values (:workid, :step, :exercise) where (select count(name) from exercise where name = :exercise) = 1');
 	$query->bindValue(':workid', $workid, PDO::PARAM_STR);
 	$query->bindValue(':step', $step, PDO::PARAM_STR);
 	$query->bindValue(':exercise', $exercise, PDO::PARAM_STR);
