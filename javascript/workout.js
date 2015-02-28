@@ -89,7 +89,7 @@ var saveWorkout = function() {
 	console.log(workid);
 
 	var table = document.getElementById('table');
-	for (var i = 1; i < table.rows.length; i++){
+	for (var i = 1; i < table.rows.length - 1; i++){
 		var nextExercise = table.rows[i].firstChild.firstChild.value;
 		console.log(nextExercise);
 		var packet3 = {
