@@ -102,9 +102,9 @@ var saveWorkout = function() {
 			type: "POST",
 			data: packet3,
 			url: "../scripts/add_to_routine.php",
-
-			success: function(){
-				console.log("success");
+			dataType: "text",
+			success: function(data){
+				console.log(data);
 			}
 		});
 	}
