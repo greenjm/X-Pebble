@@ -105,9 +105,10 @@ var register = function() {
 		dataType: "text",
 		data: packet,
 		success: function(data){
-			if(data === "taken"){
+			console.log(data);
+			/*if(data === "taken"){
 				$("#usernameTaken").show();
-			}
+			}*/
 		}
 	});
 	if($("#usernameTaken").is(":visible")){

@@ -5,6 +5,9 @@
 
 	$username = $_POST['username'];
 
+	echo "$username";
+	return;
+
 	$query = $db->prepare('select username from users where username=:username');
 	$query->bindValue(':username', $username, PDO::PARAM_STR);
 	$query->execute();
