@@ -4,8 +4,9 @@ include "setdb.php";
 
 $name = $_GET['name'];
 
+echo "starting";
 
-$query->prepare('select duration from exercise where name=:name');
+$query = $db->prepare('select duration from exercise where name=:name');
 $query->bindValue(':name', $name, PDO::PARAM_STR);
 $query->execute();
 
