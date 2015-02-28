@@ -15,7 +15,7 @@
 		echo "Fail";
 		return;
 	} else {
-		echo $rowCount;
+		echo $rowCount . " $userid $name";
 		return;
 	}
 
