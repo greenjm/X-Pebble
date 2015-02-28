@@ -57,26 +57,26 @@
 						<tr>
 							<td>Bench Press</td>
 							<td>Place appropriate weights on barbell in the correct manner. Have your hands just outside shoulder width and lift bar. 
-							Lower bar towards the middle of your chest then push it upward. Repeat. It may be necessary to have a friend to spot you. Duration: </td>
+							Lower bar towards the middle of your chest then push it upward. Repeat. It may be necessary to have a friend to spot you. Duration: 90 seconds</td>
 							<td><img alt="Bench press" src="../images/benchpress.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Lat. Pull Downs</td>
 							<td>Sit down in pull down machine to appropriately adjust leg holders. Adjust weight. Grab bar about 1.5 times shoulder width and move to 
 							sit down with extended arms holding the bar above your head. Keeping your back straight, pull the bar down to your chest. 
-							Then slowly let it raise back above your head and repeat. Duration: </td>
+							Then slowly let it raise back above your head and repeat. Duration: 90 seconds</td>
 							<td><img alt="Lat Pull Down" src="../images/latpulldown.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Tricep Push Downs</td>
 							<td>While standing at the appropriate machine, adjust the weight and pull down the bar so that your elbows are at your sides. 
-							While keeping your back straight and your elbows at your sides push down the bar and let it rise slowly. Repeat. Duration:</td>
+							While keeping your back straight and your elbows at your sides push down the bar and let it rise slowly. Repeat. Duration: 90 seconds</td>
 							<td><img alt="Tricep Push Down" src="../images/triceppushdown.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Bicep Curls</td>
 							<td>This can be done standing or sitting. Standing: use 2 dumbbells. With your arms at your side, raise your hands and twist your hands 
-							outward as your hand reaches your shoulder then return your hand to its original position. Duration: </td>
+							outward as your hand reaches your shoulder then return your hand to its original position. Duration: 90 seconds</td>
 							<td><img alt="Curls" src="../images/curls.gif"></img></td>
 						</tr>
 					</table>
@@ -86,22 +86,22 @@
 					<table>
 						<tr>
 							<td>Tree Pose</td>
-							<td>While standing in prayer, or salutation, bring one foot up and place the balls of that foot on the other knee. Return to original position slowly. Do this for both legs. Duration: </td>
+							<td>While standing in prayer, or salutation, bring one foot up and place the balls of that foot on the other knee. Return to original position slowly. Do this for both legs. Duration: 90 seconds</td>
 							<td><img alt="Tree Pose" src="../images/treepose.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Downward Facing Dog</td>
-							<td>Assume the position to do a push-up. Push your straight up. Hold the position where both your arms and legs are straight and locked. Return to original position slowly. Duration: </td>
+							<td>Assume the position to do a push-up. Push your straight up. Hold the position where both your arms and legs are straight and locked. Return to original position slowly. Duration: 90 seconds</td>
 							<td><img alt="Downward Dog" src="../images/downwarddog.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Upward Facing Dog</td>
-							<td>Assume the position to do a push-up. Push your upper body up while keeping and pushing your hips toward the ground. Return to original position slowly. Duration:</td>
+							<td>Assume the position to do a push-up. Push your upper body up while keeping and pushing your hips toward the ground. Return to original position slowly. Duration: 90 seconds</td>
 							<td><img alt="Upward Dog" src="../images/upwarddog.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Warrior Pose</td>
-							<td>While standing in prayer, spread feet twice your shoulder width. Extend arms to both sides. Turn your head left or right and corresponding foot to match, then lunge. Return to original position slowly. Repeat for other side. Duration: </td>
+							<td>While standing in prayer, spread feet twice your shoulder width. Extend arms to both sides. Turn your head left or right and corresponding foot to match, then lunge. Return to original position slowly. Repeat for other side. Duration: 90 seconds</td>
 							<td><img alt="Warrior Pose" src="../images/warrior.gif"></img></td>
 						</tr>
 					</table>
