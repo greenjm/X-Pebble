@@ -160,6 +160,14 @@ input[type=checkbox]:checked ~ #menu{
 		display:none;
 	}
 }
+
+#mainIcon {
+	float: left;
+	width: 65px;
+	height: 65px;
+
+}
+
 /**-----------------------------For Gallery and profile------------------------------------**/
 li img {
 	width: :240px;

@@ -23,7 +23,7 @@ document.onkeypress = stopRKey;
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
 	<script src="../javascript/workout.js"></script>
 
-	<link href="../images/fav.gif" type="image/gif" rel="shortcut icon"/>
+	<link href="../images/X-Pebble Favicon.png" type="image/png" rel="icon"/>
 </head>
 <body>
 	<?PHP include 'navbar.html'; ?>
