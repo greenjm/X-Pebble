@@ -7,7 +7,7 @@
 	$exercise = $_POST['exercise'];
 
 	$query = $db->prepare('insert into routine (workid, step, exercise) values (:workid, :step, :exercise)');
-	$query->bindValue(':workid', $userid, PDO::PARAM_INT);
+	$query->bindValue(':workid', $workid, PDO::PARAM_INT);
 	$query->bindValue(':step', $step, PDO::PARAM_INT);
 	$query->bindValue(':exercise', $exercise, PDO::PARAM_STR);
 	$query->execute();
