@@ -6,7 +6,9 @@
 	<title>Home Page</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/index.css">
+	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/index.js"></script>
 
 	<link href="../images/fav.gif" type="image/gif" rel="shortcut icon"/>
 </head>
@@ -23,7 +25,8 @@
 				<br></br>
 				<label for="password"><h2>Password:</h2></label>
 				<input type="password" name="password" autofocus/>
-				<br></br>
+				<br>
+				<p style="diplay:hidden" id="loginError">Invalid Username or Password</p>
 				<div align="justify">
 					<button type="submit" value="Sign in" onclick="login()">Sign In</button>
 					<button id="register" type="submit" value="Register" onclick="openregister()">Register</button>

@@ -2,6 +2,7 @@
 <html>
 <head>
 
+<!-- The following <script> prevents Enter from submitting forms, useful for other functions -->
 	<script type="text/javascript"> 
 
 function stopRKey(evt) { 
