@@ -1,12 +1,15 @@
 .wrapper {
-	width:80%;
+	width:85%;
 	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*----- Tabs -----*/
 .tabs {
     width:100%;
     display:inline-block;
+	
 }
  
     /*----- Tab Links -----*/
@@ -60,3 +63,23 @@
         .tab.active {
             display:block;
         }
+		
+		table, td, th {
+			
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		tr:nth-child(odd) {
+			background-color: #FFB19A;
+		}
+		
+		td {
+			width: auto;
+			height: 130px;
+			padding:5px;
+		}
+		
