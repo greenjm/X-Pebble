@@ -60,6 +60,7 @@ var saveWorkout = function() {
 		"username": username;
 	};
 	$.ajax({
+		type: "GET",
 		url: "../scripts/get_id_from_username.php",
 		data: packet,
 		dataType: "text",
