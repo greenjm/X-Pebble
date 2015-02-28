@@ -67,9 +67,9 @@ var saveWorkout = function() {
 		async: false,
 		success: function(data) {
 			userid = data;
-			console.log(userid);
 		}
 	});
-	console.log(userid);
+	var workoutName = $("workoutname").value;
+	console.log(workoutName);
 }
 
