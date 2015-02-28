@@ -4,11 +4,11 @@ window.onload = function() {
 
 var populateDatalist = function(){
 	var datalist = $("#exercisenames");
-	console.log(datalist);
 	$.ajax({
 		url: "../scripts/get_all_exercises_by_name.php",
-		datatype: "json",
+		dataType: 'json',
 		success: function(data){
+			data = jQuery.parseJSON(data);
 			for(var id in data){
 				console.log(data[id]['name']);
 			}	
