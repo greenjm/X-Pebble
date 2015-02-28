@@ -32,6 +32,7 @@ var getDuration = function(e){
 		success: function(data) {
 			console.log(data);
 			e.parentNode.nextSibling.innerHTML = data;
+			console.log(e.parentNode.nextSibling);
 		}
 	});
 }
