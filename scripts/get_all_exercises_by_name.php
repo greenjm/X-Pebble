@@ -7,12 +7,14 @@ $query->execute();
 
 $results = array();
 if ($query->execute()){
+	$count = 0;
 	while($row = $query->fetch(PDO::FETCH_ASSOC)){
 		$name = $row["name"];
-		$results[$name] = $name;
+		$results[$count] = $name;
+		$count++;
 	}
 }
 
-echo $results;
+echo json_encode($results);
 
 ?>

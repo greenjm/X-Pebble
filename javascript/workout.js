@@ -8,10 +8,10 @@ var populateDatalist = function(){
 	$.ajax({
 		url: "../scripts/get_all_exercises_by_name.php",
 		success: function(data){
-			/*for(var id in data){
-				console.log(data[id]['name']);
+			for(var id in data){
+				console.log(data[id]);
 			}
-			document.createElement('option');*/
+			document.createElement('option');
 
 			console.log(data);
 		}
