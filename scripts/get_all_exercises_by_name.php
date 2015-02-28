@@ -7,6 +7,6 @@ $query->execute();
 
 $rowCount = $query->rowCount();
 
-echo $rowCount;
+echo "hello";
 
 ?>
