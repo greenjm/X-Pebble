@@ -10,11 +10,11 @@ var populateDatalist = function(){
 		success: function(data){
 			//var test = jQuery.parseJSON(data);
 			for(var id in data){
+				var option = document.createElement('option');
+				option.attr('value', data[id]['name']);
 				console.log(data[id]['name']);
-			}	
-			document.createElement('option');
-
-			console.log(data);
+				datalist.append(option);
+			}
 		}
 	})
 }
