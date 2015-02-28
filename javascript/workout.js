@@ -20,23 +20,31 @@ var populateDatalist = function(){
 	});
 }
 
-var addRow = function() {
-	var table = document.getElementById('table');
-	var row = table.insertRow(table.rows.length-1);
-	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames" onchange="getDuration(this)"></td>';
-}
-
 var getDuration = function(e){
-	console.log(e.parentNode.parentNode.rowIndex);
 	var packet = {
-		"name" = e.value
-	}
+		"name": e.value
+	};
 	$.ajax({
 		type: "GET",
 		url: "../scripts/get_exercise_duration.php",
 		dataType: 'text',
+		data: packet,
 		success: function(data) {
 			console.log(data);
+			e.parentNode.nextSibling.innerHTML = data;
+			console.log(e.parentNode.nextSibling);
 		}
 	});
 }
+
+var addRow = function() {
+	var table = document.getElementById('table');
+	var row = table.insertRow(table.rows.length-1);
+	row.innerHTML = '<td><input class="searchbox" type="text" class="test" list="exercisenames"></td><td></td>';
+	$("input").keyup(function(event) {
+		if (event.keyCode == 13){
+		getDuration(this);
+	}
+	});
+}
+
