@@ -66,6 +66,7 @@ var saveWorkout = function() {
 		dataType: "text",
 		success: function(data) {
 			userid = data;
+			console.log(userid);
 		}
 	});
 	console.log(userid);
