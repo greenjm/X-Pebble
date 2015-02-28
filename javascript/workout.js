@@ -40,8 +40,8 @@ var getDuration = function(e){
 var addRow = function() {
 	var table = document.getElementById('table');
 	var row = table.insertRow(table.rows.length-1);
-	row.innerHTML = '<td><input class="searchbox" type="text" class="test" list="exercisenames"></td><td></td>';
-	$(".test").keyup(function(event) {
+	row.innerHTML = '<td><input class="searchbox" type="text" class="test' + table.rows.length-1 + '" list="exercisenames"></td><td></td>';
+	$("#test" + table.rows.length-1).keyup(function(event) {
 		if (event.keyCode == 13){
 		getDuration(this);
 	}
