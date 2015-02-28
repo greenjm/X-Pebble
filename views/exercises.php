@@ -28,7 +28,7 @@
 						<tr>
 							<td>Push-Ups</td>
 							<td>Lay on ground prone with hands under shoulders. Keep a straight back and hold the head up. Push body up all the way without locking the elbows. 
-							Then lower body down until elbows are at a 90 degree angle. Repeat. Keep a steady pace on both the descent and ascent. Duration: 60 seconds</td>
+							Then lower body down until elbows are at a 90 degree angle. Repeat. Can be done on knees or feet. Keep a steady pace on both the descent and ascent. Duration: 60 seconds</td>
 							<td><img alt="pushups" src="../images/pushups.gif"></img></td>
 						</tr>
 						<tr>
@@ -86,22 +86,22 @@
 					<table>
 						<tr>
 							<td>Tree Pose</td>
-							<td>Instructions</td>
+							<td>While standing in prayer, or salutation, bring one foot up and place the balls of that foot on the other knee. Return to original position slowly. Do this for both legs. Duration: </td>
 							<td><img alt="Tree Pose" src="../images/treepose.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Downward Facing Dog</td>
-							<td>Instructions</td>
+							<td>Assume the position to do a push-up. Push your straight up. Hold the position where both your arms and legs are straight and locked. Return to original position slowly. Duration: </td>
 							<td><img alt="Downward Dog" src="../images/downwarddog.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Upward Facing Dog</td>
-							<td>Instructions</td>
+							<td>Assume the position to do a push-up. Push your upper body up while keeping and pushing your hips toward the ground. Return to original position slowly. Duration:</td>
 							<td><img alt="Upward Dog" src="../images/upwarddog.gif"></img></td>
 						</tr>
 						<tr>
 							<td>Warrior Pose</td>
-							<td>Instructions</td>
+							<td>While standing in prayer, spread feet twice your shoulder width. Extend arms to both sides. Turn your head left or right and corresponding foot to match, then lunge. Return to original position slowly. Repeat for other side. Duration: </td>
 							<td><img alt="Warrior Pose" src="../images/warrior.gif"></img></td>
 						</tr>
 					</table>
