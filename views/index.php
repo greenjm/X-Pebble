@@ -13,7 +13,7 @@
 <body>
 	<?PHP include 'navbar.html'; ?>
 	<div class="wrapper">
-		<div id="log-wrapper" style="display:none">
+		<div id="log-wrapper">
 			<div id="logHeader">
 				<h1 align="center">Login</h1>
 			</div>
@@ -24,11 +24,13 @@
 				<label for="password"><h2>Password:</h2></label>
 				<input type="password" name="password" autofocus/>
 				<br></br>
-				<button type="submit" value="Sign in" onclick="login()">Sign In</button>
-				<button type="submit" value="Sign in" onclick="login()">Sign In</button>
+				<div align="justify">
+					<button type="submit" value="Sign in" onclick="login()">Sign In</button>
+					<button id="register" type="submit" value="Register" onclick="openregister()">Register</button>
+				</div>
 			</div>
 		</div>
-		<div id="regWrapper">
+		<div id="regWrapper" style="display:none">
 			<div id="regHeader">
 				<h1 align="center">Register</h1>
 			</div>
