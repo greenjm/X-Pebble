@@ -69,7 +69,22 @@ var saveWorkout = function() {
 			userid = data;
 		}
 	});
+	var workid;
 	var workoutName = $("#workoutname").val();
-	console.log(workoutName);
+	var packet2 = {
+		"userid": userid,
+		"name": workoutName
+	};
+	$.ajax({
+		type: "POST",
+		url: "../scripts/add_new_workout.php",
+		data: packet2,
+		dataType: "text",
+		success: function(data) {
+			workid = data;
+			console.log(workid);
+		}
+	});
+	console.log(workid);
 }
 
