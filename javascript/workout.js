@@ -97,10 +97,12 @@ var saveWorkout = function() {
 			"step": i,
 			"exercise": nextExercise
 		};
+		console.log(workid);
 		$.ajax({
 			type: "POST",
 			data: packet3,
 			url: "../scripts/add_to_routine.php",
+
 			success: function(){
 				console.log("success");
 			}
