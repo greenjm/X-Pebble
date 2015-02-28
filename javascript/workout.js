@@ -8,8 +8,8 @@ var populateDatalist = function(){
 		url: "../scripts/get_all_exercises_by_name.php",
 		dataType: 'json',
 		success: function(data){
-			data = jQuery.parseJSON(data);
-			for(var id in data){
+			var test = jQuery.parseJSON(data);
+			for(var id in test){
 				console.log(data[id]['name']);
 			}	
 			document.createElement('option');
