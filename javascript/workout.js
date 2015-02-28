@@ -69,7 +69,7 @@ var saveWorkout = function() {
 			userid = data;
 		}
 	});
-	var workoutName = $("workoutname").value;
+	var workoutName = $("#workoutname").value;
 	console.log(workoutName);
 }
 
