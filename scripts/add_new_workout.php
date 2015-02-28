@@ -14,6 +14,9 @@
 	if ($rowCount > 0){
 		echo "Fail";
 		return;
+	} else {
+		echo $rowCount;
+		return;
 	}
 
 	$query = $db->prepare('insert into workout (userid, name) values (:userid, :name)');
