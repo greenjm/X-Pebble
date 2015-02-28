@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/workout.css">
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/workout.js"></script>
 
 	<link href="../images/fav.gif" type="image/gif" rel="shortcut icon"/>
 </head>
