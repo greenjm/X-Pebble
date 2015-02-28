@@ -1,3 +1,5 @@
+var STEP = 0;
+
 window.onload = function() {
 	populateDatalist();
 }
@@ -8,13 +10,33 @@ var populateDatalist = function(){
 		url: "../scripts/get_all_exercises_by_name.php",
 		dataType: 'json',
 		success: function(data){
-			//var test = jQuery.parseJSON(data);
 			for(var id in data){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
-				console.log(data[id]['name']);
+				//option.setAttribute('name', value);
 				datalist.append(option);
 			}
 		}
-	})
+	});
+}
+
+var addRow = function() {
+	var table = document.getElementById('table');
+	var row = table.insertRow(table.rows.length-1);
+	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames" onchange="getDuration(this)"></td>';
+}
+
+var getDuration = function(e){
+	console.log(e.parentNode.parentNode.rowIndex);
+	var packet = {
+		"name" = e.value
+	}
+	$.ajax({
+		type: "GET",
+		url: "../scripts/get_exercise_duration.php",
+		dataType: 'text',
+		success: function(data) {
+			console.log(data);
+		}
+	});
 }
