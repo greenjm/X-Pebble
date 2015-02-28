@@ -100,7 +100,7 @@ var register = function() {
 		return;
 	}
 	$.ajax ({
-		type: "GET",
+		type: "POST",
 		url: "../scripts/check_if_user_exists.php",
 		dataType: "text",
 		data: packet,
