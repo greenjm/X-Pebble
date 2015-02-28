@@ -9,7 +9,7 @@ var populateDatalist = function(){
 		url: "../scripts/get_all_exercises_by_name.php",
 		success: function(data){
 			for(var id in data){
-				console.log(id);
+				console.log(data[id]);
 			}
 			document.createElement('option');
 
