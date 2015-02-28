@@ -1,0 +1,60 @@
+#header {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#save {
+	padding-bottom: 30px;
+	float: right;
+	position: relative;
+}
+
+#workoutname {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#save, #new-exercise {
+	background-color:#ff6335;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:2px solid #ff6134;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:16px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #2f6627;
+}
+#save:hover, #new-exercise:hover {
+	background-color:#ff6651;
+}
+#save:active, #new-exercise:active {
+	position:relative;
+	top:1px;
+}
+
+#table-wrapper {
+	width: 75%;
+	font-size: 1.9em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+th, td{
+	padding-right: 200px;
+	padding-left: 200px;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
