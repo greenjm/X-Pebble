@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile</title>
+	<title>Home Page</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/profile.css">
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
@@ -14,6 +14,7 @@
 	<?PHP include 'navbar.html'; ?>
 	<div class="wrapper">
 		<div class="center">
+			
 		<div style="display:none;" id="blackBackground" onclick="closeViewer()"></div>
 	</div>
 	<script type="text/javascript">
