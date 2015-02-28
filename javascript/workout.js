@@ -30,7 +30,8 @@ var getDuration = function(e){
 		data: packet,
 		success: function(data) {
 			e.parentNode.nextSibling.innerHTML = data;
-		} error: function() {
+		},
+		error: function() {
 			e.parentNode.nextSibling.innerHTML = "Invalid Exercise";
 		}
 	});
