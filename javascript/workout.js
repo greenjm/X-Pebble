@@ -39,7 +39,7 @@ var getDuration = function(e){
 var addRow = function() {
 	var table = document.getElementById('table');
 	var row = table.insertRow(table.rows.length-1);
-	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames"></td><td></td>;
+	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames"></td><td></td>';
 	$("#test").keyup(function(event) {
 		if (event.keyCode == 13){
 		getDuration(this);
