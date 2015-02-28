@@ -12,8 +12,8 @@ var populateDatalist = function(){
 		success: function(data){
 			for(var id in data){
 				var option = document.createElement('option');
-				option.setAttribute('value', data[id]['name'])
-				option.setAttribute('name', value);
+				option.setAttribute('value', data[id]['name']);
+				//option.setAttribute('name', value);
 				datalist.append(option);
 			}
 		}
