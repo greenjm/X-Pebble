@@ -6,12 +6,12 @@
 	$name = $_POST["name"];
 
 	$query = $db->prepare('insert into workout (userid, name) values (:userid, :name)');
-	$query->bindValue(':userid', $userid, PDO::PARAM_STR);
+	$query->bindValue(':userid', $userid, PDO::PARAM_INT);
 	$query->bindValue(':name', $name, PDO::PARAM_STR);
 	$query->execute();
 
 	$fetchQuery = $db->prepare('select workid from workout where userid = :userid and name = :name');
-	$fetchQuery->bindValue(':userid', $userid, PDO::PARAM_STR);
+	$fetchQuery->bindValue(':userid', $userid, PDO::PARAM_INT);
 	$fetchQuery->bindValue(':name', $name, PDO::PARAM_STR);
 	$fetchQuery->execute();
 

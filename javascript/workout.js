@@ -95,7 +95,14 @@ var saveWorkout = function() {
 			"step": i,
 			"exercise": table.rows[i].firstChild.firstChild.value
 		};
-		console.log(table.rows[i].firstChild.firstChild.value);
+		$.ajax({
+			type: "POST",
+			data: packet3,
+			url: "../scripts/add_to_routine.php",
+			success: function(){
+				console.log("success");
+			}
+		})
 	}
 }
 
