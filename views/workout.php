@@ -41,6 +41,7 @@ document.onkeypress = stopRKey;
 		</tr>
 		<tr>
 			<td><button id="new-exercise" type="button" onclick="addRow()">New Exercise</button></td>
+			<td style="display:none;" id="maxSizeError">You have reached max capacity for this workout</td>
 		</tr>
 	</table>
 </div>

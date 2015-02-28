@@ -13,7 +13,6 @@ var populateDatalist = function(){
 			for(var id in data){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
-				//option.setAttribute('name', value);
 				datalist.append(option);
 			}
 		}
@@ -30,15 +29,18 @@ var getDuration = function(e){
 		dataType: 'text',
 		data: packet,
 		success: function(data) {
-			console.log(data);
 			e.parentNode.nextSibling.innerHTML = data;
-			console.log(e.parentNode.nextSibling);
 		}
 	});
 }
 
 var addRow = function() {
+	$("#maxSizeError").hide();
 	var table = document.getElementById('table');
+	if (table.rows.length > 17){
+		$("#maxSizeError").show();
+		return;
+	}
 	var row = table.insertRow(table.rows.length-1);
 	row.innerHTML = '<td><input class="searchbox" type="text" class="test" list="exercisenames"></td><td></td>';
 	$("input").keyup(function(event) {

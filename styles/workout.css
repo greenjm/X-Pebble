@@ -66,3 +66,7 @@ table{
 tr {
 	height: 50px;
 }
+
+#save {
+	margin-right: 50px;
+}
