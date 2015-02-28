@@ -5,13 +5,10 @@
 
 	$username = $_POST['username'];
 
-	echo "$username";
-	return;
-
 	$query = $db->prepare('select username from users where username=:username');
 	$query->bindValue(':username', $username, PDO::PARAM_STR);
 	$query->execute();
-	$rowCount = $checkQuery->rowCount();
+	$rowCount = $query->rowCount();
 
 	if ($rowCount > 0){
 		echo "taken";
