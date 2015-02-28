@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 include "setdb.php";
 
-$query = $db->prepare('select name from exercise');
+$query = $db->prepare('select count(name) from exercise');
 $query->execute();
 
 $rowCount = $query->rowCount();
