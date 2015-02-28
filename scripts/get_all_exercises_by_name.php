@@ -5,8 +5,14 @@ include "setdb.php";
 $query = $db->prepare('select name from exercise');
 $query->execute();
 
-$row = $query->fetch(PDO::FETCH_ASSOC);
+$results = array();
+if ($query->execute()){
+	while($row = $query->fetch(PDO::FETCH_ASSOC)){
+		$name = $row["name"];
+		$results[$name] = $name;
+	}
+}
 
-echo $row["name"];
+echo json_encode($results);
 
 ?>
