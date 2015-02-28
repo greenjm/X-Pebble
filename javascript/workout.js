@@ -91,7 +91,6 @@ var saveWorkout = function() {
 	var table = document.getElementById('table');
 	for (var i = 1; i < table.rows.length - 1; i++){
 		var nextExercise = table.rows[i].firstChild.firstChild.value;
-		console.log(nextExercise);
 		var packet3 = {
 			"workid": workid,
 			"step": i,
@@ -103,8 +102,8 @@ var saveWorkout = function() {
 			data: packet3,
 			url: "../scripts/add_to_routine.php",
 			dataType: "text",
-			success: function(data){
-				console.log(data);
+			success: function(){
+				console.log("success");
 			}
 		});
 	}
