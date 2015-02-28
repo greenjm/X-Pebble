@@ -7,22 +7,6 @@ window.onload = function() {
 	} else {
 		notLoggedInNav();
 	}
-
-
-
-
-	//for testing
-	$.ajax ({
-		url: "../scripts/get_all_exercise_ids.php",
-		type: "GET",
-		dataType: "json",
-		success: function(data){
-			console.log(data);
-		}
-	});
-
-
-
 }
 
 var notLoggedInNav = function() {
