@@ -6,7 +6,7 @@
 	$name = $_POST["name"];
 
 	$checkName = $db->prepare('select workid from workout where userid = :userid and name = :name');
-	$checkName->bindValue(':userid', $userid, PDO::PARAM_INT);
+	$checkName->bindValue(':userid', $userid, PDO::PARAM_STR);
 	$checkName->bindValue(':name', $name, PDO::PARAM_STR);
 	$checkName->execute();
 
