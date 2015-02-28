@@ -88,7 +88,7 @@ var saveWorkout = function() {
 				return;
 			}
 			workid = data;
-			console.log(workid);
+			console.log(data);
 		}
 	});
 	console.log(workid);
