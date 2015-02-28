@@ -21,8 +21,6 @@ var populateDatalist = function(){
 }
 
 var getDuration = function(e){
-	//console.log(e.parentNode.parentNode.rowIndex);
-	console.log(e.value);
 	var packet = {
 		"name": e.value
 	};

@@ -4,15 +4,13 @@ include "setdb.php";
 
 $name = $_GET['name'];
 
-echo $name;
-return;
 
 $query->prepare('select duration from exercise where name=:name');
 $query->bindValue(':name', $name, PDO::PARAM_STR);
 $query->execute();
 
-$row = $query->fetch(PDO::FETCH_ASSOC);
+$rowCount = $query->rowCount;
 
-echo $row['duration'];
+echo $rowCount;
 
 ?>
