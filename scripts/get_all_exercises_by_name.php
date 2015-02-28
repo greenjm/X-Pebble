@@ -7,6 +7,6 @@ $query->execute();
 
 $row = $query->fetch(PDO::FETCH_ASSOC);
 
-echo $row;
+echo $row["name"];
 
 ?>
