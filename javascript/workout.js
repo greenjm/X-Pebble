@@ -8,9 +8,7 @@ var populateDatalist = function(){
 	$.ajax({
 		url: "../scripts/get_all_exercises_by_name.php",
 		success: function(data){
-			for(var id in data){
-				console.log(data[id]["name"]);
-			}
+			console.log(data['1']['name']);
 			document.createElement('option');
 
 			console.log(data);
