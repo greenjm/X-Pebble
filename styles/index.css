@@ -7,7 +7,7 @@
 
 }
 
-#log-wrapper{
+#log-wrapper, #regWrapper{
 	display: block;
 	width: 340px;
 	height: 500px;
@@ -17,7 +17,7 @@
 	margin-right: auto;
 }
 
-#loginHeader {
+#logHeader , #regHeader{
 	clear:both;
 	width:auto;
 	padding:10px 10px 10px 10px;
@@ -41,8 +41,55 @@
 	color: #000;
 }
 
+#regForm {
+	width: 316px;
+	height: 430px;
+	padding: 10px 12px 10px 12px;
+	background-color: #FFF;
+	border-radius: 0px 0px 5px 5px;
+	font-weight: bold;
+	color: #000;
+}
+
+#regForm table {
+	width: 100%;
+	font-size: 15px;
+}
+
+#regForm td {
+	padding: 10px 0px 10px 0px;
+}
+
+#regForm input {
+	font-size: 15px;
+}
+
 #logForm input{
 	font-size: 20px;
+}
+
+#logForm button, #regForm button {
+	background-color:#ff6335;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:2px solid #ff6134;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:16px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #2f6627;
+}
+#logForm button:hover {
+	background-color:#ff6651;
+}
+#logForm button:hover {
+	position:relative;
+	top:1px;
 }
 
 .left {

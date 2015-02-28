@@ -13,18 +13,59 @@
 <body>
 	<?PHP include 'navbar.html'; ?>
 	<div class="wrapper">
-		<div id="log-wrapper">
-			<div id="loginHeader">
+		<div id="log-wrapper" style="display:none">
+			<div id="logHeader">
 				<h1 align="center">Login</h1>
 			</div>
 			<div id="logForm" align="center">
 				<label for="username"><h2>Username:</h2></label>
 				<input type="text" name="username" autofocus />
-				<br>
-				<br>
+				<br></br>
 				<label for="password"><h2>Password:</h2></label>
 				<input type="password" name="password" autofocus/>
-				<br>
+				<br></br>
+				<button type="submit" value="Sign in" onclick="login()">Sign In</button>
+				<button type="submit" value="Sign in" onclick="login()">Sign In</button>
+			</div>
+		</div>
+		<div id="regWrapper">
+			<div id="regHeader">
+				<h1 align="center">Register</h1>
+			</div>
+			<div id="regForm">
+				<table>
+					<tr>
+						<td><label for="first-name" >First Name:</label></td>
+						<td><input type="text" name="first-name" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="last-name">Last Name:</label></td>
+						<td><input type="text" name="last-name" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="email">E-mail:</label></td>
+						<td><input type="email" name="email" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="pebbleid">Pebbble ID:</label></td>
+						<td><input type="text" name="pebbleid" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="user">Username:</label></td>
+						<td><input type="text" name="user" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Password:</label></td>
+						<td><input type="password" name="pass" autofocus/></td>
+					</tr>
+					<tr>
+						<td><label for="confirm">Confirm Password:</label></td>
+						<td><input type="password" name="confirm" autofocus/></td>
+					</tr>
+					<tr>
+						<td>
+				</table>
+				<div align="center"><button id="sign-up" type="submit" style="float: center" value="Sign Up" onclick="register()">Sign Up</button></div>
 			</div>
 		</div>
 	</div>
