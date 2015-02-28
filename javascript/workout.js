@@ -27,5 +27,5 @@ var addRow = function() {
 }
 
 var getDuration = function(e){
-	console.log(e.val());
+	console.log(e.valueOf());
 }
