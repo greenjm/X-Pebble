@@ -10,7 +10,7 @@
 	$password = $_POST['password'];
 	$pebbleid = $_POST['pebbleid'];
 
-	$query = $db->prepare('insert into users (first_name,last_name,email,username,password, pebbleid) values(:firstname,:lastname,:email,:username,:password, :pebbleid)');
+	$query = $db->prepare('insert into users (firstname,lastname,email,username,password, pebbleid) values(:firstname,:lastname,:email,:username,:password, :pebbleid)');
 	$query->bindValue(':firstname', $first_name, PDO::PARAM_STR);
 	$query->bindValue(':lastname', $last_name, PDO::PARAM_STR);
 	$query->bindValue(':email', $email, PDO::PARAM_STR);
