@@ -17,7 +17,7 @@ var populateDatalist = function(){
 				datalist.append(option);
 			}
 		}
-	})
+	});
 }
 
 var addRow = function() {
@@ -27,5 +27,16 @@ var addRow = function() {
 }
 
 var getDuration = function(e){
-	console.log(e.value);
+	console.log(e.parentNode.parentNode.rowIndex);
+	var packet = {
+		"name" = e.value
+	}
+	$.ajax({
+		type: "GET",
+		url: "../scripts/get_exercise_duration.php",
+		dataType: 'text',
+		success: function(data) {
+			console.log(data);
+		}
+	});
 }
