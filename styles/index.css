@@ -1,0 +1,70 @@
+.profile {
+	margin: 1.7em auto 2em auto;
+	width:80%;
+	max-width: 1020px;
+	/**margin-left: auto;
+	margin-right: auto;**/
+
+}
+
+#log-wrapper{
+	display: block;
+	width: 340px;
+	height: 500px;
+	padding: 15px 15px 15px 15px;
+	float:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#loginHeader {
+	clear:both;
+	width:auto;
+	padding:10px 10px 10px 10px;
+	color: #FFFFFF;
+	background-color:#ff6335;
+	/*padding: 15px 15px;*/
+	border-radius: 5px 5px 0px 0px;
+	font-weight: bold;
+	height: auto;
+	overflow: auto;
+}
+
+#logForm{
+	width: 316px;
+	height: 258px;
+	padding: 12px 12px 12px 12px;
+	background-color: #FFFFFF;
+	text-align: left;
+	border-radius: 0px 0px 5px 5px;
+	font-weight: bold;
+	color: #000;
+}
+
+#logForm input{
+	font-size: 20px;
+}
+
+.left {
+	width: 340px;
+	height: 240px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.right {
+	width: 340px;
+	height: 240px;
+	margin-bottom: 20px;
+	float:right;
+}
+
+.center {
+	width: 340px;
+	height: 340px;
+	padding: 15px 15px 15px 15px;
+	float:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
