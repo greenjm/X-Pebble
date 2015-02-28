@@ -9,7 +9,7 @@ $query->prepare('select duration from exercise where name=:name');
 $query->bindValue(':name', $name, PDO::PARAM_STR);
 $query->execute();
 
-$rowCount = $query->rowCount;
+$rowCount = $query->rowCount();
 
 echo $rowCount;
 
