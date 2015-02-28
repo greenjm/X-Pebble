@@ -1,3 +1,8 @@
+.wrapper {
+	width:80%;
+	padding:10px;
+}
+
 /*----- Tabs -----*/
 .tabs {
     width:100%;
@@ -22,7 +27,7 @@
             padding:9px 15px;
             display:inline-block;
             border-radius:3px 3px 0px 0px;
-            background:#7FB5DA;
+            background:#ff6335;
             font-size:16px;
             font-weight:600;
             color:#4c4c4c;
