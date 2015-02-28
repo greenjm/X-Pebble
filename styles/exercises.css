@@ -1,117 +1,57 @@
-.profile {
-	margin: 1.7em auto 2em auto;
-	width:80%;
-	max-width: 1020px;
-	/**margin-left: auto;
-	margin-right: auto;**/
-
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
 }
-
-#log-wrapper, #regWrapper{
-	display: block;
-	width: 340px;
-	height: 500px;
-	padding: 15px 15px 15px 15px;
-	float:center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#logHeader , #regHeader{
-	clear:both;
-	width:auto;
-	padding:10px 10px 10px 10px;
-	color: #FFFFFF;
-	background-color:#ff6335;
-	/*padding: 15px 15px;*/
-	border-radius: 5px 5px 0px 0px;
-	font-weight: bold;
-	height: auto;
-	overflow: auto;
-}
-
-#logForm{
-	width: 316px;
-	height: 258px;
-	padding: 12px 12px 12px 12px;
-	background-color: #FFFFFF;
-	text-align: left;
-	border-radius: 0px 0px 5px 5px;
-	font-weight: bold;
-	color: #000;
-}
-
-#regForm {
-	width: 316px;
-	height: 430px;
-	padding: 10px 12px 10px 12px;
-	background-color: #FFF;
-	border-radius: 0px 0px 5px 5px;
-	font-weight: bold;
-	color: #000;
-}
-
-#regForm table {
-	width: 100%;
-	font-size: 15px;
-}
-
-#regForm td {
-	padding: 10px 0px 10px 0px;
-}
-
-#regForm input {
-	font-size: 15px;
-}
-
-#logForm input{
-	font-size: 20px;
-}
-
-#logForm button, #regForm button {
-	background-color:#ff6335;
-	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius:20px;
-	border:2px solid #ff6134;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:16px;
-	font-weight:bold;
-	padding:16px 40px;
-	text-decoration:none;
-	text-shadow:0px 1px 10px #2f6627;
-}
-#logForm button:hover {
-	background-color:#ff6651;
-}
-#logForm button:hover {
-	position:relative;
-	top:1px;
-}
-
-.left {
-	width: 340px;
-	height: 240px;
-	margin-bottom: 20px;
-	float: left;
-}
-
-.right {
-	width: 340px;
-	height: 240px;
-	margin-bottom: 20px;
-	float:right;
-}
-
-.center {
-	width: 340px;
-	height: 340px;
-	padding: 15px 15px 15px 15px;
-	float:center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+		color:#000;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
