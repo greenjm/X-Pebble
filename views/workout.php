@@ -26,8 +26,7 @@
 			<th>Duration</th>
 		</tr>
 		<tr>
-			<td><button id="new-exercise" type="button" onclick="addLine()">New Exercise</button></td>
-			<td><input type="text" id="test" list="exercisenames"></td>
+			<td><button id="new-exercise" type="button" onclick="addRow()">New Exercise</button></td>
 		</tr>
 	</table>
 </div>
