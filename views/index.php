@@ -70,6 +70,8 @@
 					<tr>
 						<td>
 				</table>
+				<p id="passwordError" style="display:none;">Your passwords do not match</p>
+				<p id="usernameTaken" style="display:none;">That username or PebbleID is already in use</p>
 				<div align="center"><button id="sign-up" type="submit" style="float: center" value="Sign Up" onclick="register()">Sign Up</button></div>
 			</div>
 		</div>
