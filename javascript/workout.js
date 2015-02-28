@@ -54,6 +54,19 @@ var addRow = function() {
 }
 
 var saveWorkout = function() {
-	
+	var username = Cookie.get("username");
+	var userid;
+	var packet = {
+		"username": username;
+	};
+	$.ajax({
+		url: "../scripts/get_id_from_username.php",
+		data: packet,
+		dataType: "text",
+		success: function(data) {
+			userid = data;
+		}
+	});
+	console.log(userid);
 }
 
