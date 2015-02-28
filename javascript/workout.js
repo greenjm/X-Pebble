@@ -20,17 +20,12 @@ var populateDatalist = function(){
 	});
 }
 
-var addRow = function() {
-	var table = document.getElementById('table');
-	var row = table.insertRow(table.rows.length-1);
-	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames" onchange="getDuration(this)"></td>';
-}
-
 var getDuration = function(e){
-	console.log(e.parentNode.parentNode.rowIndex);
+	//console.log(e.parentNode.parentNode.rowIndex);
+	console.log(e.value);
 	var packet = {
-		"name" = e.value
-	}
+		"name": e.value
+	};
 	$.ajax({
 		type: "GET",
 		url: "../scripts/get_exercise_duration.php",
@@ -40,3 +35,15 @@ var getDuration = function(e){
 		}
 	});
 }
+
+var addRow = function() {
+	var table = document.getElementById('table');
+	var row = table.insertRow(table.rows.length-1);
+	row.innerHTML = '<td><input class="searchbox" type="text" id="test" list="exercisenames"></td>';
+	$("#test").keyup(function(event) {
+		if (event.keyCode == 13){
+		getDuration(this);
+	}
+	});
+}
+

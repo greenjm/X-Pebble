@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<script type="text/javascript"> 
+
+function stopRKey(evt) { 
+  var evt = (evt) ? evt : ((event) ? event : null); 
+  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+} 
+
+document.onkeypress = stopRKey; 
+
+</script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Create Workout</title>
@@ -13,7 +26,7 @@
 </head>
 <body>
 	<?PHP include 'navbar.html'; ?>
-	<form action="#">
+	<form onsubmit="return false;">
 	<div id="header">
 	<button id="save" type="submit" value="Save Workout" onclick="saveWorkout()">Save Workout</button><br>
 	<input id="workoutname" type="text" name="workout-name" value="MyWorkout">
