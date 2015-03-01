@@ -11,10 +11,10 @@ window.onload = function() {
 
 
 	var packet = {
-		"username": 'greenjm'
+		"userid": '1'
 	}
 	$.ajax ({
-		url: '../scripts/get_name_from_username.php',
+		url: '../scripts/get_user_workouts.php',
 		data: packet,
 		dataType: 'json',
 		success: function(data){
