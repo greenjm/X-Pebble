@@ -14,7 +14,6 @@ window.onload = function(){
 		url: "../scripts/get_name_from_username.php",
 		data: packet,
 		dataType: "json",
-		async: false,
 		success: function(data){
 			nameresults = data;
 			usernme.html(data[0]);
