@@ -142,8 +142,8 @@
 		
 		<div style="display:none;" id="blackBackground" onclick="closeViewer()"></div>
 	</div>
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 		buildPage("");
-	</script>
+	</script>-->
 </body>
 </html>
