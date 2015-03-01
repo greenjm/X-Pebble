@@ -55,7 +55,7 @@ window.onload = function(){
 				var woname = document.createElement("li");
 				woname.innerHTML=list[i];
 				woname.setAttribute("id",list[i+1]);
-				woname.setAttribute("onclick", updatePrimaryWorkout(this));
+				woname.setAttribute("onclick", 'updatePrimaryWorkout(this)');
 				workList.append(woname);
 				i+=2;
 			};
