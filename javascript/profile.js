@@ -16,7 +16,6 @@ window.onload = function(){
 		dataType: "json",
 		success: function(data){
 			var nameresults = data;
-			console.log(data);
 			usernme.html(data[0]);
 			firstName.html(data[1]);
 			lastName.html(data[2]);
@@ -31,7 +30,6 @@ window.onload = function(){
 		async: false,
 		success: function(data){
 			USERID = data;
-			console.log(USERID);
 		}
 	});
 	
@@ -49,6 +47,7 @@ window.onload = function(){
 		dataType: "json",
 		success: function(data){
 			var list = data;
+			console.log(data);
 			var i=0;
 			while(list[i]) {
 				workList.append('<li>list[i]</li>');
@@ -69,20 +68,17 @@ var get_stats = function(category){
 	} else {
 		id = "stre";
 	}
-	console.log(id);
 	var completed = $("#" + id + " table tr:first-of-type td:nth-of-type(2)");
 	var attempted = $("#" + id + " table tr:nth-of-type(2) td:nth-of-type(2)");
 	var percentCompletion = $("#" + id + " table tr:nth-of-type(3) td:nth-of-type(2)");
 	var popularity = $("#" + id + " table tr:nth-of-type(4) td:nth-of-type(2)");
 	/*var completed = document.getElementById('' + id);
 	completed = completed.firstChild;*/
-	console.log(completed);
 	var packet = {
 		"category": category,
 		"userid": USERID
 	};
 	var results;
-	console.log(USERID);
 	$.ajax ({
 		type: "GET",
 		url: "../scripts/get_stats_for_category.php",
@@ -90,7 +86,6 @@ var get_stats = function(category){
 		dataType: "json",
 		success: function(data){
 			results = data;
-			console.log(data);
 			completed.html(data[1]);
 			attempted.html(data[0]);
 			percentCompletion.html(Math.floor(data[1] / data[0] * 100) + "%");
