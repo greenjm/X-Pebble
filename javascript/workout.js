@@ -14,13 +14,7 @@ var populateDatalist = function(){
 			for(var id in data){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
-				option.setAttribute('onclick', 'getDuration(this)');
-				console.log(option);
-				option.onclick = function() {
-					console.log("clicked");
-					getDuration(this);
-				}
-				datalist.append(option);
+				list.append(option);
 			}
 		}
 	});
