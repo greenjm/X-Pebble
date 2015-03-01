@@ -59,10 +59,10 @@ var addRow = function() {
 
 var deltRow = function(i) {
 	console.log(i);
-	console.log(i.closest('tr'));
-	console.log(i.closest('tr').rowIndex);
+	console.log(i.parentNode);
+	console.log(i.parentNode.parentNode.rowIndex);
 	var table = document.getElementById('table');
-	table.deleteRow(i.closest('tr').rowIndex);
+	table.deleteRow(i.parentNode.parentNode.rowIndex);
 }
 
 var saveWorkout = function() {
