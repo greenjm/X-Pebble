@@ -15,7 +15,8 @@ window.onload = function(){
 		data: packet,
 		dataType: "json",
 		success: function(data){
-			nameresults = data;
+			var nameresults = data;
+			console.log(data);
 			usernme.html(data[0]);
 			firstName.html(data[1]);
 			lastName.html(data[2]);
