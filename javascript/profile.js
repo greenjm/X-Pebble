@@ -11,6 +11,7 @@ window.onload = function(){
 		url: "../scripts/get_id_from_username.php",
 		data: packet,
 		dataType: "text",
+		async: false,
 		success: function(data){
 			USERID = data;
 			console.log(USERID);
