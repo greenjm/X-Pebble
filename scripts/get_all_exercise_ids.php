@@ -17,7 +17,7 @@
 	if ($query->execute()){
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
 			$id = $row["id"];
-			$results += "$id, ";
+			$results .= "$id, ";
 		}
 	}
 
