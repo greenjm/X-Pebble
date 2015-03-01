@@ -13,10 +13,10 @@
 	$query->execute();
 
 	$results = array();
-	$row = $query->fetch(PDO::FETCH_ASSOC);
-	$totalRow = $totalQuery->fetch(PDO::FETCH_ASSOC);
-	array_push($results, $row);
-	array_push($results, $row);
-	array_push($results, $totalRow);
+	$row = $query->fetch(PDO::FETCH_BOTH);
+	$totalRow = $totalQuery->fetch(PDO::FETCH_BOTH);
+	array_push($results, $row[0]);
+	array_push($results, $row[1]);
+	array_push($results, $totalRow[0]);
 	echo json_encode($results);
 ?>
