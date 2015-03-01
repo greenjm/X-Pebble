@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-	onStart();
+	//onStart();
     jQuery('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = jQuery(this).attr('href');
  
