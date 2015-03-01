@@ -3,11 +3,14 @@ var USERNAME;
 
 window.onload = function(){
 
+	var aerobic = get_stats(1);
+	console.log(aerobic);
+
 	CanvasJS.addColorSet('siteColors',
 		["#b77474",
 		"#74cfd2",
-		"#bfa757",
-		"#68ba66"		
+		"#68ba66",	
+		"#bfa757"			
 		])
 
 	var chart = new CanvasJS.Chart("chartContainer",
@@ -100,7 +103,7 @@ window.onload = function(){
 }
 
 var get_stats = function(category){
-	var id;
+	/*var id;
 	if (category == 1){
 		id = "aero";
 	}else if (category == 2){
@@ -128,11 +131,13 @@ var get_stats = function(category){
 		dataType: "json",
 		success: function(data){
 			results = data;
-			completed.html(data[1]);
+			return results;
+			/*completed.html(data[1]);
 			attempted.html(data[0]);
 			percentCompletion.html(Math.floor(data[1] / data[0] * 100) + "%");
-			popularity.html(Math.floor(data[0] / data[2] * 100) + "%");
+			popularity.html(Math.floor(data[0] / data[2] * 100) + "%");*/
 		}
 	});
+
 }
 	
