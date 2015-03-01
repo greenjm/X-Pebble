@@ -3,7 +3,7 @@
 
 	include 'setdb.php';
 
-	$pebbleid = $_GET['pebbleid']
+	$pebbleid = $_GET['pebbleid'];
 
 	$query = $db->prepare('select e.id from exercise e
 	join routine r on r.exercise = e.name
