@@ -1,9 +1,6 @@
 var STEP = 0;
 
-window.onload = function() {
-	onStart();
-	populateDatalist();
-}
+
 
 var populateDatalist = function(){
 	var datalist = $("#exercisenames");
