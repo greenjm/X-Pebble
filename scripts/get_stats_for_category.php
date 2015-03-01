@@ -15,8 +15,8 @@
 	$results = array();
 	$row = $query->fetch(PDO::FETCH_ASSOC);
 	$totalRow = $totalQuery->fetch(PDO::FETCH_ASSOC);
-	array_push($results, $row[0]);
-	array_push($results, $row[1]);
-	array_push($results, $totalRow[0]);
+	array_push($results, $row);
+	array_push($results, $row);
+	array_push($results, $totalRow);
 	echo json_encode($results);
 ?>
