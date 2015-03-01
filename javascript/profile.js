@@ -53,8 +53,9 @@ window.onload = function(){
 			while(list[i]) {
 				var woname = document.createElement("li");
 				woname.innerHTML=list[i];
+				woname.setAttribute("id",list[i+1]);
 				workList.append(woname);
-				i++;
+				i+=2;
 			};
 		}
 	});
