@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/profile.css">
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/profiletabs.js"></script>
 
 	<link href="../images/X-Pebble Favicon.png" type="image/png" rel="icon"/>
 </head>
@@ -15,43 +16,50 @@
 	<div class="wrapper">
 		
 		<div class="profile">
-			<div class="left">
-				<h1 id="username">User Name:</h1>
-				<h2 id="pebbleid">Pebble ID Number:</h2>
-			</div>
-			<div class="right">
-				<div id="my-stats">
-					<h1>My Stats</h1>
+			<div class="info-wrapper">
+				<div class="left">
+					<h1 id="firstName">[First]</h1>
+					<h1 id="lastName">[Last]</h1>
+					<h2 id="username">[Username]</h2>
 				</div>
 			</div>
-			<div id="myWorkoutsHeader">
-				<div id="my-title">
-					<h1>My Workouts</h1>
+			<div class="data-wrapper">
+				<div class="workout-wrapper">
+					<div id="myWorkoutsHeader">
+						<div id="wo-title">
+							<h1>My Workouts</h1>
+						</div>
+					</div>
+					<div id="woForm" class="list">
+					</div>
+					<button id="newwo"><a href="workout.php">Create New Workout</a></button>
 				</div>
-			</div>
-			<div id="myWorkouts" class="gallery">
-				<ul>
-					<li>
-						<img alt="pushup" src="../images/aero.gif"></img>
-					</li>
-					<li>
-						<img alt="treepose" src="../images/yoga.gif"></img>
-					</li>
-					<li>
-						<img alt="lunge" src="../images/stretch.gif"></img>
-					</li>
-					<li>
-						<img alt="benchpress" src="../images/anaero.gif"></img>
-					</li>
-					<li>
-						<img alt="pushup" src="../images/aero.gif"></img>
-					</li>
-					<li>
-						<img alt="treepose" src="../images/yoga.gif"></img>
-					</li>
-				</ul>
-			</div>
-			<button><a href="workout.php">Create New Workout</a></button>
+				<div class="stats-wrapper">
+					<div id="myStatsHeader">
+						<h1>My Stats</h1>
+					</div>
+					<div id="statForm">
+						<div class="tabs">
+							<ul class="tab-links">
+								<li class="active"><a href="#aero">Aerobic</a></li>
+								<li><a href="#anaer">Anaerobic</a></li>
+								<li><a href="#yoga">Yoga</a></li>
+								<li><a href="#stre">Stretching</a></li>
+							</ul>
+						<div class="tab-content">
+							<div id="aero" class="tab active">
+							</div>
+							<div id="anaer" class="tab">
+							</div>
+							<div id="yoga" class="tab">
+							</div>
+							<div id="stre" class="tab">
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>			
 		</div>
 		
 		

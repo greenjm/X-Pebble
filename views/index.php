@@ -52,7 +52,7 @@
 						<td><input type="email" name="email" autofocus/></td>
 					</tr>
 					<tr>
-						<td><label for="pebbleid">Pebbble ID:</label></td>
+						<td><label for="pebbleid">Pebble ID:</label></td>
 						<td><input type="text" name="pebbleid" autofocus/></td>
 					</tr>
 					<tr>
