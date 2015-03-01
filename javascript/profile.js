@@ -13,6 +13,7 @@ window.onload = function(){
 		dataType: "text",
 		success: function(data){
 			USERID = data;
+			console.log(USERID);
 		}
 	});
 	get_stats(1);
