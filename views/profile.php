@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="../libraries/canvasjs/canvasjs.min.js"></script>
 	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/main.js"></script>
 	<script src="../javascript/profile.js"></script>
 	<script src="../javascript/profiletabs.js"></script>
 	
