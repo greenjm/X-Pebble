@@ -11,12 +11,12 @@ window.onload = function() {
 
 
 	var packet = {
-		"pebbleid": 'qwerty'
+		"username": 'greenjm'
 	}
 	$.ajax ({
-		url: '../scripts/get_all_exercise_ids.php',
+		url: '../scripts/get_name_from_username.php',
 		data: packet,
-		dataType: 'text',
+		dataType: 'json',
 		success: function(data){
 			console.log(data);
 		}
