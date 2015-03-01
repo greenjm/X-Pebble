@@ -55,12 +55,17 @@ window.onload = function(){
 				var woname = document.createElement("li");
 				woname.innerHTML=list[i];
 				woname.setAttribute("id",list[i+1]);
-				woname.setAttribute("onclick", 'console.log("clicked")');
+				woname.setAttribute("onclick", updatePrimaryWorkout(this));
 				workList.append(woname);
 				i+=2;
 			};
 		}
 	});
+}
+
+var updatePrimaryWorkout = function(e){
+	console.log(e);
+	console.log(e.getAttribute('id'));
 }
 
 var get_stats = function(category){
