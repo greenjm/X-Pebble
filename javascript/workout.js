@@ -55,7 +55,7 @@ var addRow = function() {
 
 var saveWorkout = function() {
 	$("#nameTaken").hide();
-	var username = "greenjm";
+	var username = Cookie.get("username");
 	var userid;
 	var packet = {
 		"username": username
@@ -73,7 +73,7 @@ var saveWorkout = function() {
 	var workid;
 	var workoutName = $("#workoutname").val();
 	var packet2 = {
-		"userid": 1,
+		"userid": userid,
 		"name": 'MyWorkout'
 	};
 	$.ajax({
