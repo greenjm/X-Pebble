@@ -1,3 +1,10 @@
+body {
+	background-image: url("../images/loginscreen.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; 
+}
+
 .profile {
 	margin: 1.7em auto 2em auto;
 	width:80%;
