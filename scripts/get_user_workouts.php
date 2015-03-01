@@ -5,7 +5,7 @@
 
 	$userid = $_GET['userid'];
 
-	$query = $db->prepare('select name from workout where userid=:userid limit 10 order by workid desc');
+	$query = $db->prepare('select name from workout where userid=:userid order by workid desc');
 	$query->bindValue(':userid', $userid, PDO::PARAM_INT);
 	$query->execute();
 
