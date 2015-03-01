@@ -8,7 +8,7 @@
 	$query = $db->prepare('select e.id from exercise e
 	join routine r on r.exercise = e.name
 	join workout w on w.workid = r.workid
-	join users u on u.userid = w.userid
+	join users u on u.userid = w.userid and u.primarywork = w.workid
 	where u.pebbleid=:pebbleid');
 	$query->bindValue(':pebbleid', $pebbleid, PDO::PARAM_STR);
 	$query->execute();
