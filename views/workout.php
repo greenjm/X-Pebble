@@ -24,6 +24,7 @@ document.onkeypress = stopRKey;
 	<link rel="stylesheet" href="../styles/workout.css">
 	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/main.js"></script>
 	<script src="../javascript/workout.js"></script>
 
 	<link href="../images/FaviconFinal.png" type="image/png" rel="icon"/>

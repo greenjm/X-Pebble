@@ -2,6 +2,7 @@ var USERID;
 var USERNAME;
 
 window.onload = function(){
+	onStart();
 
 	USERNAME = Cookie.get("username");
 	var firstName = $("#firstName");

@@ -6,7 +6,9 @@
 	<title>Exercise Information</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/exercises.css">
+	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
+	<script src="../javascript/main.js"></script>
 	<script src="../javascript/exercisetabs.js"></script>
 
 	<link href="../images/FaviconFinal.png" type="image/png" rel="icon"/>

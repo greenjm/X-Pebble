@@ -1,44 +1,29 @@
 var MENU;
 
 window.onload = function() {
-	if(Cookie.exists("username")){
+	if (Cookie.exists("username")) {
 		console.log("success");
 	} else {
 		notLoggedInNav();
 	}
 
-
-
 	var packet = {
 		"userid": '1'
 	}
-	$.ajax ({
+
+	$.ajax({
 		url: '../scripts/get_user_workouts.php',
 		data: packet,
 		dataType: 'json',
-		success: function(data){
+		success: function(data) {
 			console.log(data);
 		}
 	})
 
 }
 
-var notLoggedInNav = function() {
-	MENU = document.getElementById('menu').innerHTML;
-	document.getElementById('menu').innerHTML = "<li id='sign-in-register'><button type='submit' onclick='openlogin()'>Sign in/Register</button></li>";
-}
-
-
-
-//FOR DEV testing, not for prod USED ROF LOG OUT
-var clearCookies = function(){
-	var date = new Date();
-	console.log("here");
-	Cookie.remove("username");
-}
-
 var openlogin = function() {
-	if($("#log-wrapper").is(":visible") || $("#regWrapper").is(":visible")){
+	if ($("#log-wrapper").is(":visible") || $("#regWrapper").is(":visible")) {
 		$("#log-wrapper").hide();
 		$("#regWrapper").hide();
 	} else {
@@ -53,13 +38,16 @@ var getLoginCredentials = function() {
 	var username = $("input[name=username]").val();
 	var password = $("input[name=password]").val();
 	console.log(username, password);
-	return {username: username, password: password};
+	return {
+		username: username,
+		password: password
+	};
 }
 
 /**
  * Attempts to login, via database queries with the login credentials
  */
-var login = function(){
+var login = function() {
 	var credentials = getLoginCredentials();
 
 	var packet = {
@@ -77,14 +65,14 @@ var login = function(){
 		success: function(data) {
 			Cookie.set("username", packet.username);
 			Cookie.set("login-success", true);
-			document.getElementById('menu').innerHTML= MENU;
+			document.getElementById('menu').innerHTML = MENU;
 			window.location.href = "../views/profile.php";
 		},
 		error: function() {
 			$("#loginError").show();
 		},
 		complete: function() {
-			
+
 		}
 	});
 }
@@ -102,7 +90,15 @@ var getRegisterFields = function() {
 	var firstName = $("input[name=first-name]").val();
 	var lastName = $("input[name=last-name]").val();
 	var pebbleid = $("input[name=pebbleid]").val();
-	return {username: username, password: password, confirm: confirm, email: email, firstName: firstName, lastName: lastName, pebbleid: pebbleid};
+	return {
+		username: username,
+		password: password,
+		confirm: confirm,
+		email: email,
+		firstName: firstName,
+		lastName: lastName,
+		pebbleid: pebbleid
+	};
 }
 
 var register = function() {
@@ -118,34 +114,34 @@ var register = function() {
 		"lastname": fields["lastName"],
 		"pebbleid": fields["pebbleid"]
 	};
-	if(packet["confirm"] != packet["password"]){
+	if (packet["confirm"] != packet["password"]) {
 		$("#passwordError").show();
 		return;
 	}
-	$.ajax ({
+	$.ajax({
 		type: "POST",
 		url: "../scripts/check_if_user_exists.php",
 		dataType: "text",
 		data: packet,
-		success: function(data){
+		success: function(data) {
 			console.log(data);
 			/*if(data === "taken"){
 				$("#usernameTaken").show();
 			}*/
 		}
 	});
-	if($("#usernameTaken").is(":visible")){
+	if ($("#usernameTaken").is(":visible")) {
 		return;
 	}
-	$.ajax ({
+	$.ajax({
 		type: "POST",
 		url: "../scripts/add_user.php",
 		data: packet,
-		success: function(){
+		success: function() {
 			$("#regWrapper").hide();
 			Cookie.set("username", packet.username);
 			Cookie.set("login-success", true);
-			document.getElementById('menu').innerHTML= MENU;
+			document.getElementById('menu').innerHTML = MENU;
 			window.location.href = "../views/profile.php";
 		}
 	})
