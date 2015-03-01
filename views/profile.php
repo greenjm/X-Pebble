@@ -37,7 +37,7 @@
 							<li></li>
 						</ul>
 					</div>
-					<button id="newwo"><a href="workout.php">Create New Workout</a></button>
+					<button id="newwo"><a href="../views/workout.php">Create New Workout</a></button>
 				</div>
 				<div class="stats-wrapper">
 					<div id="myStatsHeader">
