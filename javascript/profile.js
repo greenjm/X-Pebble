@@ -22,6 +22,7 @@ window.onload = function(){
 			lastName.html(data[2]);
 		}
 	});
+	
 	$.ajax ({
 		type: "GET",
 		url: "../scripts/get_id_from_username.php",
@@ -33,7 +34,27 @@ window.onload = function(){
 			console.log(USERID);
 		}
 	});
+	
 	get_stats(1);
+	
+	var workList = $("#workList");
+	var wopacket = {
+		"userid":USERID
+	}
+	
+	$.ajax ({
+		type: "GET",
+		url: "../scripts/get_user_workouts.php",
+		data: wopacket,
+		dataType: "json",
+		success: function(data){
+			var list = data;
+			var i=0;
+			while(list[i]) {
+				workList.append('<li>list[i]</li>');
+			};
+		}
+	});
 }
 
 var get_stats = function(category){

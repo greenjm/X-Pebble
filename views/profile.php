@@ -33,7 +33,7 @@
 						</div>
 					</div>
 					<div id="woForm" class="list">
-						<ul>
+						<ul id="workList">
 							<li></li>
 						</ul>
 					</div>
