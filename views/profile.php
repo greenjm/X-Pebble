@@ -52,7 +52,7 @@
 								<li><a href="#stre">Stretching</a></li>
 							</ul>
 						<div class="tab-content">
-							<div id="aero" class="tab active" onclick="get_stats(1)">
+							<div id="aero" class="tab active" title="1">
 								<table>
 									<tr>
 										<td>Completed</td>
@@ -72,7 +72,7 @@
 									</tr>
 								</table>
 							</div>
-							<div id="anaer" class="tab" onclick="get_stats(3)">
+							<div id="anaer" class="tab" title="3">
 								<table>
 									<tr>
 										<td>Completed</td>
@@ -92,7 +92,7 @@
 									</tr>
 								</table>
 							</div>
-							<div id="yoga" class="tab" onclick="get_stats(2)">
+							<div id="yoga" class="tab" title="2">
 								<table>
 									<tr>
 										<td>Completed</td>
@@ -112,7 +112,7 @@
 									</tr>
 								</table>
 							</div>
-							<div id="stre" class="tab" onclick="get_stats(4)">
+							<div id="stre" class="tab" title="4">
 								<table>
 									<tr>
 										<td>Completed</td>

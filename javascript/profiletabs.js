@@ -9,5 +9,6 @@ jQuery(document).ready(function() {
         jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
  
         e.preventDefault();
+        get_stats(e.attr("title"));
     });
 });
