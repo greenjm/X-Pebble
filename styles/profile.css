@@ -172,6 +172,22 @@
         list-style:none;
 		
     }
+	
+	.tab-links li:nth-child(1) {
+			background-color:#b97473;
+		}
+		
+		.tab-links li:nth-child(2) {
+			background-color:#c3aa5a;
+		}
+		
+		.tab-links li:nth-child(3) {
+			background-color:#6bc6ca;
+		}
+		
+		.tab-links li:nth-child(4) {
+			background-color:#70c36e;
+		}
  
         .tab-links a {
             padding:9px 15px;
@@ -186,21 +202,7 @@
 			text-decoration: none;
         }
 		
-		.tab-links a:nth-child(1) {
-			background-color:#b97473;
-		}
 		
-		.tab-links a:nth-child(2) {
-			background-color:#c3aa5a;
-		}
-		
-		.tab-links a:nth-child(3) {
-			background-color:#6bc6ca;
-		}
-		
-		.tab-links a:nth-child(4) {
-			background-color:#70c36e;
-		}
  
         .tab-links a:hover {
             background:#a7cce5;
