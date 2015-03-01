@@ -185,6 +185,22 @@
             transition:all linear 0.15s;
 			text-decoration: none;
         }
+		
+		.tab-links a:nth-child(1) {
+			background-color:#b97473;
+		}
+		
+		.tab-links a:nth-child(2) {
+			background-color:#c3aa5a;
+		}
+		
+		.tab-links a:nth-child(3) {
+			background-color:#6bc6ca;
+		}
+		
+		.tab-links a:nth-child(4) {
+			background-color:#70c36e;
+		}
  
         .tab-links a:hover {
             background:#a7cce5;
