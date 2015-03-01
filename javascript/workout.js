@@ -14,6 +14,9 @@ var populateDatalist = function(){
 			for(var id in data){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
+				option.onclick = function() {
+					getDuration(option);
+				}
 				datalist.append(option);
 			}
 		}
