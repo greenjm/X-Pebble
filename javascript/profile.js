@@ -130,7 +130,6 @@ var get_stats = function(category){
 		url: "../scripts/get_stats_for_category.php",
 		data: packet,
 		dataType: "json",
-		async: false,
 		success: function(data){
 			results = data;
 			return results;

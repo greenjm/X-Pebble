@@ -41,10 +41,12 @@
 				</div>
 				<div class="stats-wrapper">
 					<div id="myStatsHeader">
-						<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+					<div id="stat-title">
+						<h1>My Statistics</h1>
+					</div>
 						
 					</div>
-					<!--<div id="statForm">
+					<div id="statForm">
 						<div class="tabs">
 							<ul class="tab-links">
 								<li class="active"><a href="#aero" onclick="get_stats(1)">Aerobic</a></li>
@@ -133,7 +135,7 @@
 									</tr>
 								</table>
 							</div>
-						</div>-->
+						</div>
 						</div>
 					</div>
 				</div>
