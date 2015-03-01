@@ -23,6 +23,6 @@
 		}
 		$results .="$count";
 	}
-	//$results = substr($results, 0, strlen($results)-1);
+	$results = substr($results, 1, strlen($results));
 	echo $results;
 ?>
