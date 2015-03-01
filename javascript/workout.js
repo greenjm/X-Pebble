@@ -15,7 +15,8 @@ var populateDatalist = function(){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
 				option.onclick = function() {
-					getDuration(option);
+					console.log("clicked");
+					getDuration(this);
 				}
 				datalist.append(option);
 			}
@@ -24,6 +25,7 @@ var populateDatalist = function(){
 }
 
 var getDuration = function(e){
+	console.log(e.value);
 	var packet = {
 		"name": e.value
 	};
