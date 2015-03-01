@@ -17,6 +17,7 @@ window.onload = function() {
 	$.ajax ({
 		url: '../scripts/get_stats_for_category.php',
 		data: packet,
+		dataType: 'json',
 		success: function(data){
 			console.log(data);
 		}

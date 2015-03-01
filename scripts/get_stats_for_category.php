@@ -18,5 +18,5 @@
 	array_push($results, $row[0]);
 	array_push($results, $row[1]);
 	array_push($results, $totalRow[0]);
-	echo $results;
+	echo json_encode($results);
 ?>
