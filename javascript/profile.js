@@ -1,5 +1,6 @@
 var USERID;
 var USERNAME;
+var AEROBIC;
 
 window.onload = function(){
 
@@ -103,7 +104,7 @@ window.onload = function(){
 }
 
 var get_stats = function(category){
-	/*var id;
+	var id;
 	if (category == 1){
 		id = "aero";
 	}else if (category == 2){
@@ -113,7 +114,7 @@ var get_stats = function(category){
 	} else {
 		id = "stre";
 	}
-	var completed = $("#" + id + " table tr:first-of-type td:nth-of-type(2)");
+	/*var completed = $("#" + id + " table tr:first-of-type td:nth-of-type(2)");
 	var attempted = $("#" + id + " table tr:nth-of-type(2) td:nth-of-type(2)");
 	var percentCompletion = $("#" + id + " table tr:nth-of-type(3) td:nth-of-type(2)");
 	var popularity = $("#" + id + " table tr:nth-of-type(4) td:nth-of-type(2)");
@@ -129,6 +130,7 @@ var get_stats = function(category){
 		url: "../scripts/get_stats_for_category.php",
 		data: packet,
 		dataType: "json",
+		async: false,
 		success: function(data){
 			results = data;
 			return results;
