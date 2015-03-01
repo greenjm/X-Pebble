@@ -1,8 +1,5 @@
-window.onload = function(){
-	onStart();
-}
-
 jQuery(document).ready(function() {
+	onStart();
     jQuery('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = jQuery(this).attr('href');
  
