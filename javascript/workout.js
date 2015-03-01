@@ -119,5 +119,7 @@ var saveWorkout = function() {
 			}
 		});
 	}
+	alert("Your workout has been saved successfully");
+	window.location.replace("http://x-pebble.azurewebsites.net/views/profile.php");
 }
 
