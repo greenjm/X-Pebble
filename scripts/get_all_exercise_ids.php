@@ -13,7 +13,7 @@
 	$query->bindValue(':pebbleid', $pebbleid, PDO::PARAM_STR);
 	$query->execute();
 
-	$rowCount = $query->rowCount();
+	$rowCount = $query->fetchColumn();
 
 	$results = "$rowCount,";
 	if ($query->execute()){
