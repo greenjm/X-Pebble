@@ -34,7 +34,6 @@
 					</div>
 					<div id="woForm" class="list">
 						<ul id="workList">
-							<li></li>
 						</ul>
 					</div>
 					<button id="newwo"><a href="../views/workout.php">Create New Workout</a></button>
