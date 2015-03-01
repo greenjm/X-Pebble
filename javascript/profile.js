@@ -50,7 +50,9 @@ window.onload = function(){
 			console.log(data);
 			var i=0;
 			while(list[i]) {
-				workList.append('<li>list[i]</li>');
+				var woname = document.createElement("li");
+				woname.innerHTML=list[i];
+				workList.append(woname);
 				i++;
 			};
 		}
