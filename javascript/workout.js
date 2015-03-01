@@ -45,7 +45,7 @@ var addRow = function() {
 		return;
 	}
 	var row = table.insertRow(table.rows.length-1);
-	row.innerHTML = '<td><input class="searchbox" type="text" class="test" list="exercisenames" autofocus="autofocus"></td><td></td>';
+	row.innerHTML = '<td><input class="searchbox" type="text" class="test" list="exercisenames" autofocus="autofocus"></td><td></td><td><button id="delbutton" type="submit" value="X" onclick="deltRow(this)">X</button></td>';
 	$("input").keyup(function(event) {
 		if (event.keyCode == 13){
 		getDuration(this);
@@ -53,11 +53,12 @@ var addRow = function() {
 	});
 }
 
-var deltRow = function() {
+var deltRow = function(i) {
+	console.log(i);
+	console.log(i.closest('tr'));
+	console.log(i.closest('tr').rowIndex);
 	var table = document.getElementById('table');
-	if(table.rows.length < 16){
-		$("#maxSizeError").hide();
-	}
+	table.deleteRow(i.closest('tr').rowIndex);
 }
 
 var saveWorkout = function() {
