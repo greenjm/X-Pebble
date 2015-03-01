@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../styles/profile.css">
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
 	<script src="../javascript/profiletabs.js"></script>
+	<script src="../javascript/profile.js></script>
 
 	<link href="../images/X-Pebble Favicon.png" type="image/png" rel="icon"/>
 </head>
@@ -31,6 +32,9 @@
 						</div>
 					</div>
 					<div id="woForm" class="list">
+						<ul>
+							<li></li>
+						</ul>
 					</div>
 					<button id="newwo"><a href="workout.php">Create New Workout</a></button>
 				</div>
