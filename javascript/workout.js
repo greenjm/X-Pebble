@@ -56,6 +56,7 @@ var addRow = function() {
 var saveWorkout = function() {
 	$("#nameTaken").hide();
 	var username = Cookie.get("username");
+	console.log(username);
 	var userid;
 	var packet = {
 		"username": username
@@ -68,6 +69,7 @@ var saveWorkout = function() {
 		async: false,
 		success: function(data) {
 			userid = data;
+			console.log(userid);
 		}
 	});
 	var workid;
@@ -83,10 +85,6 @@ var saveWorkout = function() {
 		dataType: "text",
 		async: false,
 		success: function(data) {
-			if (data === "Fail"){
-				$("#nameTaken").show();
-				return;
-			}
 			workid = data;
 			console.log(data);
 		}
