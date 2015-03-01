@@ -46,10 +46,10 @@
 					<div id="statForm">
 						<div class="tabs">
 							<ul class="tab-links">
-								<li class="active"><a href="#aero">Aerobic</a></li>
-								<li><a href="#anaer">Anaerobic</a></li>
-								<li><a href="#yoga">Yoga</a></li>
-								<li><a href="#stre">Stretching</a></li>
+								<li class="active"><a href="#aero" onclick="get_stats(1)">Aerobic</a></li>
+								<li><a href="#anaer" onclick="get_stats(3)">Anaerobic</a></li>
+								<li><a href="#yoga" onclick="get_stats(2)">Yoga</a></li>
+								<li><a href="#stre" onclick="get_stats(4)">Stretching</a></li>
 							</ul>
 						<div class="tab-content">
 							<div id="aero" class="tab active" title="1">
