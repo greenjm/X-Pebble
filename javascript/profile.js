@@ -4,7 +4,7 @@ var USERNAME;
 window.onload = function(){
 	USERNAME = Cookie.get("username");
 	var packet = {
-		"username": USERNAME;
+		"username": USERNAME
 	}
 	$.ajax ({
 		type: "GET",
