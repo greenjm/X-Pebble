@@ -240,6 +240,15 @@
 		td:last-child {
 			border-right:0;
 		}
+
+.list li {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.list li:hover {
+	background-color: #FFB19A;
+}
 		
 		
 		
