@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Home Page</title>
+	<title>X-Pebble: Cross Training</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/index.css">
 	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>

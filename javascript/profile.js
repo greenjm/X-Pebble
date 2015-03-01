@@ -3,9 +3,24 @@ var USERNAME;
 
 window.onload = function(){
 	USERNAME = Cookie.get("username");
+	var firstName = $("#firstName");
+	var lastName = $("#lastName");
+	var usernme = $("#username");
 	var packet = {
 		"username": USERNAME
 	}
+	$.ajax ({
+		type: "GET",
+		url: "../scripts/get_name_from_username.php",
+		data: packet,
+		dataType: "json",
+		success: function(data){
+			nameresults = data;
+			usernme.html(data[0]);
+			firstName.html(data[1]);
+			lastName.html(data[2]);
+		}
+	});
 	$.ajax ({
 		type: "GET",
 		url: "../scripts/get_id_from_username.php",
@@ -18,6 +33,10 @@ window.onload = function(){
 		}
 	});
 	get_stats(1);
+}
+
+var get_name("username"){
+	
 }
 
 var get_stats = function(category){
