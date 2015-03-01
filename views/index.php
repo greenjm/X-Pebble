@@ -15,7 +15,7 @@
 <body>
 	<?PHP include 'navbar.html'; ?>
 	<div class="wrapper">
-		<div id="log-wrapper">
+		<div id="log-wrapper" style="display:none;">
 			<div id="logHeader">
 				<h1 align="center">Login</h1>
 			</div>
@@ -77,5 +77,6 @@
 			</div>
 		</div>
 	</div>
+	<div style="display:none;" id="blackBackground" onclick="closeblack()"></div>
 </body>
 </html>

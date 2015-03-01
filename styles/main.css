@@ -42,6 +42,7 @@ nav{
 	display:inline-block;
 } 
 nav ul {
+	width: 80%;
 	list-style-type:none;
 	margin:0;
 	padding:0;

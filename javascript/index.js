@@ -26,7 +26,7 @@ window.onload = function() {
 
 var notLoggedInNav = function() {
 	MENU = document.getElementById('menu').innerHTML;
-	document.getElementById('menu').innerHTML = "";
+	document.getElementById('menu').innerHTML = "<li id='sign-in-register'><button type='submit' onclick='openlogin()'>Sign in/Register</button></li>";
 }
 
 
@@ -36,6 +36,15 @@ var clearCookies = function(){
 	var date = new Date();
 	console.log("here");
 	Cookie.remove("username");
+}
+
+var openlogin = function() {
+	if($("#log-wrapper").is(":visible") || $("#regWrapper").is(":visible")){
+		$("#log-wrapper").hide();
+		$("#regWrapper").hide();
+	} else {
+		$("#log-wrapper").show();
+	}
 }
 
 /**

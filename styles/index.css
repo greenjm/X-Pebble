@@ -19,7 +19,7 @@ body {
 	width: 340px;
 	height: 500px;
 	padding: 15px 15px 15px 15px;
-	float:center;
+	float:right;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -123,3 +123,45 @@ body {
 	margin-right: auto;
 }
 
+#blackBackground{
+	position: fixed;
+	top:0;
+	z-index: 4;
+	width:100%;
+	height:100%;
+	background-color: #000000;
+	opacity: .6;
+}
+
+#corner {
+	float: right;
+	margin-right: 10px;
+}
+
+#sign-in-register {
+	float:right;
+	padding-top: 8px;
+}
+
+#sign-in-register button {
+	background-color:#ff6335;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:2px solid #ff6134;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #2f6627;
+}
+#sign-in-register button:hover {
+	background-color:#ff6651;
+}
+#sign-in-register button:active{
+	position:relative;
+}
