@@ -7,6 +7,21 @@ window.onload = function() {
 	} else {
 		notLoggedInNav();
 	}
+
+
+
+	var packet = {
+		"userid": 1,
+		"category": 1
+	}
+	$.ajax ({
+		url: '../scripts/get_stats_for_category.php',
+		data: packet,
+		success: function(data){
+			console.log(data);
+		}
+	})
+
 }
 
 var notLoggedInNav = function() {

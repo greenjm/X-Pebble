@@ -13,13 +13,13 @@
 	$query->bindValue(':pebbleid', $pebbleid, PDO::PARAM_STR);
 	$query->execute();
 
-	$results = array();
+	$results = "";
 	if ($query->execute()){
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
 			$id = $row["id"];
-			array_push($results, $id);
+			$results += "$id, ";
 		}
 	}
 
-	echo json_encode($results);
+	echo $results;
 ?>
