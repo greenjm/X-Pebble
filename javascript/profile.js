@@ -64,8 +64,19 @@ window.onload = function(){
 }
 
 var updatePrimaryWorkout = function(e){
-	console.log(e);
-	console.log(e.getAttribute('id'));
+	var workid = e.getAttribute('id');
+	var packet = {
+		"workid": workid,
+		"username": USERNAME
+	};
+	$.ajax ({
+		url: "../scripts/update_primary_workout.php",
+		type: "POST",
+		data: packet,
+		success: function(){
+			console.log("successful");
+		}
+	})
 }
 
 var get_stats = function(category){
