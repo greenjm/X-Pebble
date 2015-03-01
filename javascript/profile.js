@@ -55,9 +55,7 @@ window.onload = function(){
 				var woname = document.createElement("li");
 				woname.innerHTML=list[i];
 				woname.setAttribute("id",list[i+1]);
-				woname.onclick = function() {
-					console.log("clicked" + this.getAttribute('id'));
-				}
+				woname.setAttribute("onclick", 'console.log("clicked")');
 				workList.append(woname);
 				i+=2;
 			};
