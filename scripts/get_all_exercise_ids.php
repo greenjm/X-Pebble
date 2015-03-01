@@ -20,5 +20,5 @@
 			array_push($results, $id);	
 		}
 	}
-	echo $results;
+	echo json_encode($results);
 ?>
