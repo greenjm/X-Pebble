@@ -114,7 +114,7 @@ var get_stats = function(category){
 	} else {
 		id = "stre";
 	}
-	/*var completed = $("#" + id + " table tr:first-of-type td:nth-of-type(2)");
+	var completed = $("#" + id + " table tr:first-of-type td:nth-of-type(2)");
 	var attempted = $("#" + id + " table tr:nth-of-type(2) td:nth-of-type(2)");
 	var percentCompletion = $("#" + id + " table tr:nth-of-type(3) td:nth-of-type(2)");
 	var popularity = $("#" + id + " table tr:nth-of-type(4) td:nth-of-type(2)");
@@ -132,11 +132,10 @@ var get_stats = function(category){
 		dataType: "json",
 		success: function(data){
 			results = data;
-			return results;
-			/*completed.html(data[1]);
+			completed.html(data[1]);
 			attempted.html(data[0]);
 			percentCompletion.html(Math.floor(data[1] / data[0] * 100) + "%");
-			popularity.html(Math.floor(data[0] / data[2] * 100) + "%");*/
+			popularity.html(Math.floor(data[0] / data[2] * 100) + "%");
 		}
 	});
 
