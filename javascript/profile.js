@@ -52,6 +52,7 @@ window.onload = function(){
 			var i=0;
 			while(list[i]) {
 				workList.append('<li>list[i]</li>');
+				i++;
 			};
 		}
 	});
