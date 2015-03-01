@@ -6,7 +6,6 @@ window.onload = function() {
 }
 
 
-
 var populateDatalist = function(){
 	var datalist = $("#exercisenames");
 	$.ajax({
