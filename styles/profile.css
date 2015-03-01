@@ -138,11 +138,11 @@
 .list ul {
     list-style-type:none;
     white-space:nowrap;
-    overflow-x:auto;
+    overflow-y:auto;
 }
 
 .list li {
-	display:inline;
+
 }
 
 /*----- Tabs -----*/

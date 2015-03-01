@@ -76,7 +76,7 @@ var saveWorkout = function() {
 	var workoutName = $("#workoutname").val();
 	var packet2 = {
 		"userid": userid,
-		"name": 'MyWorkout'
+		"name": workoutName
 	};
 	$.ajax({
 		type: "POST",
