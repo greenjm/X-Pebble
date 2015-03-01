@@ -45,7 +45,7 @@
 
 #myStatsHeader{
 	clear:both;
-	width:500px;
+	width:501px;
 	padding:10px 10px 10px 10px;
 	color: #FFFFFF;
 	background-color:#ff6335;
@@ -149,8 +149,8 @@
 .tabs {
     width:100%;
     display:inline-block;
-	background-color:#ff6335;
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px;
+	
 	
 }
  
@@ -163,21 +163,24 @@
     }
 	
 	.tab-links ul{
-		background-color:#ff6335;
 	}
 	
     .tab-links li {
-        margin:0px;
+		display:block;	
         float:left;
-        list-style:none;
-		
+		border-right: 2px solid black;
     }
  
+	
+		.tab-links li:last-child {
+			border-right:0;
+		}
         .tab-links a {
+			width:99px;
             padding:9px 15px;
             display:inline-block;
             border-radius:0px;
-			border-right: 2px solid black;
+			
             background:#ff6335;
             font-size:16px;
             font-weight:600;
@@ -185,6 +188,7 @@
             transition:all linear 0.15s;
 			text-decoration: none;
         }
+		
 		
 		
  
