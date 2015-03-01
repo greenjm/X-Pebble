@@ -11,13 +11,12 @@ window.onload = function() {
 
 
 	var packet = {
-		"userid": 1,
-		"category": 1
+		"pebbleid": 'qwerty'
 	}
 	$.ajax ({
-		url: '../scripts/get_stats_for_category.php',
+		url: '../scripts/get_all_exercise_ids.php',
 		data: packet,
-		dataType: 'json',
+		dataType: 'text',
 		success: function(data){
 			console.log(data);
 		}
