@@ -23,6 +23,7 @@ var get_stats = function(category){
 		"category": category,
 		"userid": USERID
 	};
+	console.log(USERID);
 	$.ajax ({
 		type: "GET",
 		url: "../scripts/get_stats_for_category.php",
