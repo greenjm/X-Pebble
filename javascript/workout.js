@@ -14,6 +14,7 @@ var populateDatalist = function(){
 			for(var id in data){
 				var option = document.createElement('option');
 				option.setAttribute('value', data[id]['name']);
+				console.log(option);
 				option.onclick = function() {
 					console.log("clicked");
 					getDuration(this);
