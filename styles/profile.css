@@ -153,6 +153,22 @@
 	border-radius: 0px 0px 5px 5px;
 	
 }
+
+.tabs li a:nth-child(1) {
+	background-color:#b97473;
+}
+		
+.tabs li a:nth-child(2) {
+	background-color:#c3aa5a;
+}
+		
+.tabs li a:nth-child(3) {
+	background-color:#6bc6ca;
+}
+		
+.tabs li a:nth-child(4) {
+	background-color:#70c36e;
+}
  
     /*----- Tab Links -----*/
     /* Clearfix */
@@ -173,21 +189,7 @@
 		
     }
 	
-	.tab-links li a:nth-child(1) {
-			background-color:#b97473;
-		}
-		
-		.tab-links li a:nth-child(2) {
-			background-color:#c3aa5a;
-		}
-		
-		.tab-links li a:nth-child(3) {
-			background-color:#6bc6ca;
-		}
-		
-		.tab-links li a:nth-child(4) {
-			background-color:#70c36e;
-		}
+	
  
         .tab-links a {
             padding:9px 15px;
