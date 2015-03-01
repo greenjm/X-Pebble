@@ -1,7 +1,6 @@
 var MENU;
 
 window.onload = function() {
-	clearCookies();
 	if(Cookie.exists("username")){
 		console.log("success");
 	} else {
