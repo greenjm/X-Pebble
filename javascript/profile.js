@@ -54,7 +54,7 @@ var get_stats = function(category){
 			results = data;
 			completed.html(data[1]);
 			attempted.html(data[0]);
-			percentCompletion.html(Math.floor(data[1] / data[0]) * 100);
+			percentCompletion.html(Math.floor(data[1] / data[0] * 100));
 			popularity.html(Math.floor(data[0] / data[2]) * 100);
 		}
 	});

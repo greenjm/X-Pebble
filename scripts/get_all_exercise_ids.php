@@ -16,7 +16,7 @@
 	$results = array();
 	if ($query->execute()){
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
-			$id = $row["id"];
+			$id = intval($row["id"]);
 			array_push($results, $id);	
 		}
 	}
