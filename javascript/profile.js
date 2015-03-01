@@ -2,6 +2,46 @@ var USERID;
 var USERNAME;
 
 window.onload = function(){
+
+	CanvasJS.addColorSet('siteColors',
+		["#b77474",
+		"#74cfd2",
+		"#bfa757",
+		"#68ba66"		
+		])
+
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Your Workout Statistics"
+		},
+		colorSet: "siteColors",
+		exportFileName: "Pie Chart",
+		exportEnabled: true,
+                animationEnabled: true,
+		legend:{
+			verticalAlign: "bottom",
+			horizontalAlign: "center"
+		},
+		
+		data: [
+		{       
+			type: "pie",
+			startAngle: 225,
+			showInLegend: true,
+			toolTipContent: "{legendText}: <strong>{y}%</strong>",
+			indexLabel: "{label} {y}%",
+			dataPoints: [
+				{  y: 25, legendText: "Aerobic", exploded: true, label: "Aerobic" },				
+				{  y: 25, legendText: "Yoga", label: "Yoga" },
+				{  y: 25, legendText: "Stretch", label: "Stretch"},
+				{  y: 25, legendText: "Anaerobic", label: "Anaerobic" },
+			]
+	}
+	]
+	});
+	chart.render();
+
 	USERNAME = Cookie.get("username");
 	var firstName = $("#firstName");
 	var lastName = $("#lastName");

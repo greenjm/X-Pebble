@@ -6,6 +6,7 @@
 	<title>Your Profile</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/profile.css">
+	<script type="text/javascript" src="../libraries/canvasjs/canvasjs.min.js"></script>
 	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
 	<script src="../javascript/profile.js"></script>
@@ -40,9 +41,10 @@
 				</div>
 				<div class="stats-wrapper">
 					<div id="myStatsHeader">
-						<h1>My Stats</h1>
+						<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						
 					</div>
-					<div id="statForm">
+					<!--<div id="statForm">
 						<div class="tabs">
 							<ul class="tab-links">
 								<li class="active"><a href="#aero" onclick="get_stats(1)">Aerobic</a></li>
@@ -131,13 +133,13 @@
 									</tr>
 								</table>
 							</div>
-						</div>
+						</div>-->
 						</div>
 					</div>
 				</div>
 			</div>			
 		</div>
-		
+		<div id="chartContainer" style="height: 300px; width: 100%;"></div>
 		
 		<div style="display:none;" id="blackBackground" onclick="closeViewer()"></div>
 	</div>
