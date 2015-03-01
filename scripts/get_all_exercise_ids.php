@@ -13,16 +13,12 @@
 	$query->bindValue(':pebbleid', $pebbleid, PDO::PARAM_STR);
 	$query->execute();
 
-	$results = "$rowCount,";
-	$count = 0;
+	$results = array();
 	if ($query->execute()){
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
 			$id = $row["id"];
-			$results .= "$id,";
-			$count++;
+			array_push($results, $id);	
 		}
-		$results .="$count";
 	}
-	$results = substr($results, 1, strlen($results));
 	echo $results;
 ?>
