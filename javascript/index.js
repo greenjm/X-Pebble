@@ -143,3 +143,15 @@ var register = function() {
 	})
 
 }
+
+var cancel = function() {
+	$("input[name=user]").val("");
+	$("input[name=pass]").val("");
+	$("input[name=confirm]").val("");
+	$("input[name=email]").val("");
+	$("input[name=first-name]").val("");
+	$("input[name=last-name]").val("");
+	$("input[name=pebbleid]").val("");
+	$("#regWrapper").hide();
+	$("#log-wrapper").show();
+}

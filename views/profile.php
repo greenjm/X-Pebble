@@ -48,12 +48,84 @@
 							</ul>
 						<div class="tab-content">
 							<div id="aero" class="tab active">
+								<table>
+									<tr>
+										<td>Completed</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Attempted</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Percent Completion</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Popularity</td>
+										<td></td>
+									</tr>
+								</table>
 							</div>
 							<div id="anaer" class="tab">
+								<table>
+									<tr>
+										<td>Completed</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Attempted</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Percent Completion</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Popularity</td>
+										<td></td>
+									</tr>
+								</table>
 							</div>
 							<div id="yoga" class="tab">
+								<table>
+									<tr>
+										<td>Completed</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Attempted</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Percent Completion</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Popularity</td>
+										<td></td>
+									</tr>
+								</table>
 							</div>
 							<div id="stre" class="tab">
+								<table>
+									<tr>
+										<td>Completed</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Attempted</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Percent Completion</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Popularity</td>
+										<td></td>
+									</tr>
+								</table>
 							</div>
 						</div>
 						</div>
