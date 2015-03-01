@@ -90,6 +90,7 @@ var get_stats = function(category){
 		dataType: "json",
 		success: function(data){
 			results = data;
+			console.log(data);
 			completed.html(data[1]);
 			attempted.html(data[0]);
 			percentCompletion.html(Math.floor(data[1] / data[0] * 100) + "%");
