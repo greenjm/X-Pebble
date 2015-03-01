@@ -6,9 +6,10 @@
 	<title>Profile</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/profile.css">
+	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
 	<script src="../javascript/profiletabs.js"></script>
-	<script src="../javascript/profile.js></script>
+	<script src="../javascript/profile.js"></script>
 
 	<link href="../images/X-Pebble Favicon.png" type="image/png" rel="icon"/>
 </head>
