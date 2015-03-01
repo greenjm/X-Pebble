@@ -20,6 +20,7 @@ document.onkeypress = stopRKey;
 	<title>Create Workout</title>
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="../styles/workout.css">
+	<script src="http://www.webstepbook.com/Cookie.js" type="text/javascript"></script>
 	<script src="../libraries/jquery-2.1.3.min.js"></script>
 	<script src="../javascript/workout.js"></script>
 
