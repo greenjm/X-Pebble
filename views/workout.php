@@ -40,6 +40,7 @@ document.onkeypress = stopRKey;
 		<tr>
 			<th>Name</th>
 			<th>Duration</th>
+			<th></th>
 		</tr>
 		<tr>
 			<td><button id="new-exercise" type="button" onclick="addRow()">New Exercise</button></td>
