@@ -5,7 +5,7 @@
 
 	$pebbleid = $_GET['pebbleid'];
 
-	$query = $db->prepare('select e.id, count(e.id) from exercise e
+	$query = $db->prepare('select e.id from exercise e
 	join routine r on r.exercise = e.name
 	join workout w on w.workid = r.workid
 	join users u on u.userid = w.userid
