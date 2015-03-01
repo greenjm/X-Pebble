@@ -36,10 +36,6 @@ window.onload = function(){
 	get_stats(1);
 }
 
-var get_name("username"){
-	
-}
-
 var get_stats = function(category){
 	var id;
 	if (category == 1){
